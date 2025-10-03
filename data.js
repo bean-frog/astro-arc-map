@@ -1,0 +1,318 @@
+window.mapData = [
+    {
+        name: "Alice",
+        nodes: ["Astronomy", "Stars", "Galaxies", "Nebulae", "Quasars", "Supernovae", "Pulsars", "Black Holes", "Dark Matter", "Cosmic Rays", "Exoplanets"],
+        connections: [
+            ["Astronomy", "Stars"],
+            ["Astronomy", "Galaxies"],
+            ["Stars", "Supernovae"],
+            ["Stars", "Pulsars"],
+            ["Galaxies", "Quasars"],
+            ["Galaxies", "Dark Matter"],
+            ["Supernovae", "Black Holes"],
+            ["Black Holes", "Cosmic Rays"],
+            ["Astronomy", "Exoplanets"]
+        ]
+    },
+    {
+        name: "Brian",
+        nodes: ["Astronomy", "Solar System", "Planets", "Moons", "Asteroids", "Comets", "Meteorites", "Space Missions", "Telescopes", "Satellites", "Observatories", "Space Probes"],
+        connections: [
+            ["Astronomy", "Solar System"],
+            ["Solar System", "Planets"],
+            ["Planets", "Moons"],
+            ["Solar System", "Asteroids"],
+            ["Asteroids", "Meteorites"],
+            ["Solar System", "Comets"],
+            ["Astronomy", "Telescopes"],
+            ["Telescopes", "Observatories"],
+            ["Space Missions", "Satellites"],
+            ["Satellites", "Space Probes"]
+        ]
+    },
+    {
+        name: "Clara",
+        nodes: ["Astronomy", "Galaxies", "Universe", "Cosmology", "Dark Matter", "Dark Energy", "Big Bang", "Expansion", "Redshift", "Cosmic Microwave Background", "Multiverse"],
+        connections: [
+            ["Astronomy", "Galaxies"],
+            ["Galaxies", "Universe"],
+            ["Universe", "Cosmology"],
+            ["Cosmology", "Big Bang"],
+            ["Big Bang", "Expansion"],
+            ["Expansion", "Redshift"],
+            ["Cosmology", "Dark Matter"],
+            ["Cosmology", "Dark Energy"],
+            ["Cosmology", "Cosmic Microwave Background"],
+            ["Universe", "Multiverse"]
+        ]
+    },
+    {
+        name: "David",
+        nodes: ["Astronomy", "Stars", "Nuclear Fusion", "Hydrogen", "Helium", "Star Formation", "Protostars", "Main Sequence", "Red Giants", "White Dwarfs", "Supernovae", "Neutron Stars"],
+        connections: [
+            ["Astronomy", "Stars"],
+            ["Stars", "Nuclear Fusion"],
+            ["Nuclear Fusion", "Hydrogen"],
+            ["Nuclear Fusion", "Helium"],
+            ["Stars", "Star Formation"],
+            ["Star Formation", "Protostars"],
+            ["Stars", "Main Sequence"],
+            ["Main Sequence", "Red Giants"],
+            ["Red Giants", "Supernovae"],
+            ["Supernovae", "Neutron Stars"],
+            ["Supernovae", "White Dwarfs"]
+        ]
+    },
+    {
+        name: "Ella",
+        nodes: ["Astronomy", "Planets", "Exoplanets", "Habitability", "Atmospheres", "Kepler Mission", "Transit Method", "Radial Velocity", "Biosignatures", "Water Worlds", "Gas Giants"],
+        connections: [
+            ["Astronomy", "Planets"],
+            ["Planets", "Exoplanets"],
+            ["Exoplanets", "Habitability"],
+            ["Exoplanets", "Atmospheres"],
+            ["Exoplanets", "Kepler Mission"],
+            ["Kepler Mission", "Transit Method"],
+            ["Transit Method", "Radial Velocity"],
+            ["Exoplanets", "Biosignatures"],
+            ["Exoplanets", "Water Worlds"],
+            ["Exoplanets", "Gas Giants"]
+        ]
+    },
+    {
+        name: "Felix",
+        nodes: ["Astronomy", "Space Exploration", "Apollo Program", "Moon Landing", "Mars Missions", "Rovers", "Space Telescopes", "Hubble", "James Webb", "ISS", "SpaceX", "Rocket Science"],
+        connections: [
+            ["Astronomy", "Space Exploration"],
+            ["Space Exploration", "Apollo Program"],
+            ["Apollo Program", "Moon Landing"],
+            ["Space Exploration", "Mars Missions"],
+            ["Mars Missions", "Rovers"],
+            ["Space Exploration", "Space Telescopes"],
+            ["Space Telescopes", "Hubble"],
+            ["Space Telescopes", "James Webb"],
+            ["Space Exploration", "ISS"],
+            ["Space Exploration", "SpaceX"],
+            ["SpaceX", "Rocket Science"]
+        ]
+    },
+    {
+        name: "Grace",
+        nodes: ["Astronomy", "Light", "Electromagnetic Spectrum", "Radio Waves", "Infrared", "Ultraviolet", "X-rays", "Gamma Rays", "Optical Astronomy", "Spectroscopy", "Photometry"],
+        connections: [
+            ["Astronomy", "Light"],
+            ["Light", "Electromagnetic Spectrum"],
+            ["Electromagnetic Spectrum", "Radio Waves"],
+            ["Electromagnetic Spectrum", "Infrared"],
+            ["Electromagnetic Spectrum", "Ultraviolet"],
+            ["Electromagnetic Spectrum", "X-rays"],
+            ["Electromagnetic Spectrum", "Gamma Rays"],
+            ["Astronomy", "Optical Astronomy"],
+            ["Optical Astronomy", "Spectroscopy"],
+            ["Optical Astronomy", "Photometry"]
+        ]
+    },
+    {
+        name: "Hannah",
+        nodes: ["Astronomy", "Space Weather", "Solar Wind", "Magnetosphere", "Auroras", "Sunspots", "Solar Flares", "Coronal Mass Ejections", "Geomagnetic Storms", "Space Radiation"],
+        connections: [
+            ["Astronomy", "Space Weather"],
+            ["Space Weather", "Solar Wind"],
+            ["Solar Wind", "Magnetosphere"],
+            ["Magnetosphere", "Auroras"],
+            ["Space Weather", "Sunspots"],
+            ["Sunspots", "Solar Flares"],
+            ["Solar Flares", "Coronal Mass Ejections"],
+            ["Coronal Mass Ejections", "Geomagnetic Storms"],
+            ["Geomagnetic Storms", "Space Radiation"]
+        ]
+    },
+    {
+        name: "Isaac",
+        nodes: ["Astronomy", "Gravity", "Newton", "Einstein", "General Relativity", "Space-Time", "Black Holes", "Gravitational Waves", "LIGO", "Event Horizon", "Singularity"],
+        connections: [
+            ["Astronomy", "Gravity"],
+            ["Gravity", "Newton"],
+            ["Gravity", "Einstein"],
+            ["Einstein", "General Relativity"],
+            ["General Relativity", "Space-Time"],
+            ["General Relativity", "Black Holes"],
+            ["Black Holes", "Event Horizon"],
+            ["Black Holes", "Singularity"],
+            ["General Relativity", "Gravitational Waves"],
+            ["Gravitational Waves", "LIGO"]
+        ]
+    },
+    {
+        name: "Julia",
+        nodes: ["Astronomy", "Telescopes", "Refracting Telescopes", "Reflecting Telescopes", "Radio Telescopes", "Infrared Telescopes", "X-ray Telescopes", "Optical Observatories", "Space Telescopes"],
+        connections: [
+            ["Astronomy", "Telescopes"],
+            ["Telescopes", "Refracting Telescopes"],
+            ["Telescopes", "Reflecting Telescopes"],
+            ["Telescopes", "Radio Telescopes"],
+            ["Telescopes", "Infrared Telescopes"],
+            ["Telescopes", "X-ray Telescopes"],
+            ["Telescopes", "Optical Observatories"],
+            ["Telescopes", "Space Telescopes"]
+        ]
+    },
+    {
+        name: "Kevin",
+        nodes: ["Astronomy", "Astrobiology", "Life on Mars", "Europa", "Enceladus", "Extremophiles", "SETI", "Drake Equation", "Fermi Paradox", "Technosignatures", "Exoplanet Habitability"],
+        connections: [
+            ["Astronomy", "Astrobiology"],
+            ["Astrobiology", "Life on Mars"],
+            ["Astrobiology", "Europa"],
+            ["Astrobiology", "Enceladus"],
+            ["Astrobiology", "Extremophiles"],
+            ["Astrobiology", "SETI"],
+            ["SETI", "Drake Equation"],
+            ["SETI", "Fermi Paradox"],
+            ["SETI", "Technosignatures"],
+            ["Astrobiology", "Exoplanet Habitability"]
+        ]
+    },
+    {
+        name: "Liam",
+        nodes: ["Astronomy", "Cosmology", "Big Bang", "Inflation", "Dark Matter", "Dark Energy", "Expansion", "Cosmic Web", "Large Scale Structure", "Galaxy Clusters", "Superclusters"],
+        connections: [
+            ["Astronomy", "Cosmology"],
+            ["Cosmology", "Big Bang"],
+            ["Big Bang", "Inflation"],
+            ["Cosmology", "Dark Matter"],
+            ["Cosmology", "Dark Energy"],
+            ["Cosmology", "Expansion"],
+            ["Expansion", "Cosmic Web"],
+            ["Cosmic Web", "Large Scale Structure"],
+            ["Large Scale Structure", "Galaxy Clusters"],
+            ["Galaxy Clusters", "Superclusters"]
+        ]
+    },
+    {
+        name: "Maya",
+        nodes: ["Astronomy", "Space Travel", "Rocketry", "Spacecraft", "Propulsion Systems", "Orbital Mechanics", "Interplanetary Travel", "Mars Colonization", "Space Tourism", "Reusable Rockets"],
+        connections: [
+            ["Astronomy", "Space Travel"],
+            ["Space Travel", "Rocketry"],
+            ["Space Travel", "Spacecraft"],
+            ["Spacecraft", "Propulsion Systems"],
+            ["Space Travel", "Orbital Mechanics"],
+            ["Orbital Mechanics", "Interplanetary Travel"],
+            ["Space Travel", "Mars Colonization"],
+            ["Space Travel", "Space Tourism"],
+            ["Space Travel", "Reusable Rockets"]
+        ]
+    },
+    {
+        name: "Nathan",
+        nodes: ["Astronomy", "Galaxies", "Spiral Galaxies", "Elliptical Galaxies", "Irregular Galaxies", "Galaxy Clusters", "Intergalactic Medium", "Quasars", "Active Galactic Nuclei", "Black Holes"],
+        connections: [
+            ["Astronomy", "Galaxies"],
+            ["Galaxies", "Spiral Galaxies"],
+            ["Galaxies", "Elliptical Galaxies"],
+            ["Galaxies", "Irregular Galaxies"],
+            ["Galaxies", "Galaxy Clusters"],
+            ["Galaxy Clusters", "Intergalactic Medium"],
+            ["Galaxies", "Quasars"],
+            ["Quasars", "Active Galactic Nuclei"],
+            ["Active Galactic Nuclei", "Black Holes"]
+        ]
+    },
+    {
+        name: "Olivia",
+        nodes: ["Astronomy", "Moons", "Lunar Phases", "Tides", "Eclipses", "Io", "Europa", "Ganymede", "Titan", "Enceladus", "Charon"],
+        connections: [
+            ["Astronomy", "Moons"],
+            ["Moons", "Lunar Phases"],
+            ["Moons", "Tides"],
+            ["Moons", "Eclipses"],
+            ["Moons", "Io"],
+            ["Moons", "Europa"],
+            ["Moons", "Ganymede"],
+            ["Moons", "Titan"],
+            ["Moons", "Enceladus"],
+            ["Moons", "Charon"]
+        ]
+    },
+    {
+        name: "Paul",
+        nodes: ["Astronomy", "Asteroids", "Near-Earth Objects", "Asteroid Belt", "Trojan Asteroids", "Impact Events", "Meteorites", "Space Mining", "Planetary Defense", "Ceres", "Vesta"],
+        connections: [
+            ["Astronomy", "Asteroids"],
+            ["Asteroids", "Near-Earth Objects"],
+            ["Asteroids", "Asteroid Belt"],
+            ["Asteroid Belt", "Trojan Asteroids"],
+            ["Asteroids", "Impact Events"],
+            ["Impact Events", "Meteorites"],
+            ["Asteroids", "Space Mining"],
+            ["Asteroids", "Planetary Defense"],
+            ["Asteroid Belt", "Ceres"],
+            ["Asteroid Belt", "Vesta"]
+        ]
+    },
+    {
+        name: "Quinn",
+        nodes: ["Astronomy", "Comets", "Halley's Comet", "Comet Tails", "Kuiper Belt", "Oort Cloud", "Short-period Comets", "Long-period Comets", "Comet Nuclei", "Comet Missions"],
+        connections: [
+            ["Astronomy", "Comets"],
+            ["Comets", "Halley's Comet"],
+            ["Comets", "Comet Tails"],
+            ["Comets", "Kuiper Belt"],
+            ["Comets", "Oort Cloud"],
+            ["Comets", "Short-period Comets"],
+            ["Comets", "Long-period Comets"],
+            ["Comets", "Comet Nuclei"],
+            ["Comets", "Comet Missions"]
+        ]
+    },
+    {
+        name: "Rachel",
+        nodes: ["Astronomy", "Constellations", "Zodiac", "Orion", "Ursa Major", "Ursa Minor", "Cassiopeia", "Cygnus", "Scorpius", "Pegasus", "Andromeda", "Star Charts"],
+        connections: [
+            ["Astronomy", "Constellations"],
+            ["Constellations", "Zodiac"],
+            ["Constellations", "Orion"],
+            ["Constellations", "Ursa Major"],
+            ["Constellations", "Ursa Minor"],
+            ["Constellations", "Cassiopeia"],
+            ["Constellations", "Cygnus"],
+            ["Constellations", "Scorpius"],
+            ["Constellations", "Pegasus"],
+            ["Constellations", "Andromeda"],
+            ["Constellations", "Star Charts"]
+        ]
+    },
+    {
+        name: "Sophia",
+        nodes: ["Astronomy", "Universe", "Observable Universe", "Cosmic Horizon", "Light Years", "Lookback Time", "Cosmic Expansion", "Redshift", "Future of Universe", "Heat Death", "Big Rip"],
+        connections: [
+            ["Astronomy", "Universe"],
+            ["Universe", "Observable Universe"],
+            ["Universe", "Cosmic Horizon"],
+            ["Universe", "Light Years"],
+            ["Universe", "Lookback Time"],
+            ["Universe", "Cosmic Expansion"],
+            ["Cosmic Expansion", "Redshift"],
+            ["Universe", "Future of Universe"],
+            ["Future of Universe", "Heat Death"],
+            ["Future of Universe", "Big Rip"]
+        ]
+    },
+    {
+        name: "Thomas",
+        nodes: ["Astronomy", "Physics", "Quantum Mechanics", "Particle Physics", "Higgs Boson", "Neutrinos", "CERN", "String Theory", "Multiverse", "Dark Energy", "Quantum Gravity"],
+        connections: [
+            ["Astronomy", "Physics"],
+            ["Physics", "Quantum Mechanics"],
+            ["Physics", "Particle Physics"],
+            ["Particle Physics", "Higgs Boson"],
+            ["Particle Physics", "Neutrinos"],
+            ["Particle Physics", "CERN"],
+            ["Physics", "String Theory"],
+            ["String Theory", "Multiverse"],
+            ["Physics", "Dark Energy"],
+            ["Physics", "Quantum Gravity"]
+        ]
+    }
+];
