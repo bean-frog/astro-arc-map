@@ -20,6 +20,112 @@ function resizeCanvas() {
 }
 window.addEventListener('resize', resizeCanvas);
 
+// Get names (used in single person display)
+let names = [];
+window.mapData.forEach(person => {
+    names.push(person.name)
+})
+
+
+const nameSelector = document.getElementById("nameSelector")
+const showNameCheckbox = document.getElementById("showIndividual")
+// Add names to DOM element
+names.forEach(name => {
+    let nameOption = document.createElement("option");
+    nameOption.classList.add("bg-transparent", "px-2", "py-1")
+    nameOption.innerText = name;
+    nameOption.value = name;
+    nameSelector.insertAdjacentElement('beforeend', nameOption)
+})
+// change highlight on name selector change
+nameSelector.addEventListener("change", function() {
+    console.log("change called")
+        delete window.highlightedPerson;
+        selAndDraw();
+});
+
+// Store drawHighlights function globally so it can be reused
+window.drawHighlights = null;
+
+// Handle selector activation
+showNameCheckbox.addEventListener('change', selAndDraw)
+    function selAndDraw() {
+    if (showNameCheckbox.checked) {
+
+        const selectedName = nameSelector.value;
+        const personData = window.mapData.find(p => p.name === selectedName);
+        if (!personData) return;
+
+        // Store for re-render 
+        window.highlightedPerson = selectedName;
+
+        // Create drawing function and store it globally
+        window.drawHighlights = function() {
+            ctx.save();
+            ctx.translate(panX, panY);
+            ctx.scale(scale, scale);
+
+            // Orange connections
+            ctx.strokeStyle = 'rgba(249, 115, 22, 0.8)';
+            ctx.lineWidth = 3;
+            personData.connections.forEach(([from, to]) => {
+                const fromPos = nodePositions.get(from);
+                const toPos = nodePositions.get(to);
+                if (fromPos && toPos) {
+                    ctx.beginPath();
+                    ctx.moveTo(fromPos.x, fromPos.y);
+                    ctx.lineTo(toPos.x, toPos.y);
+                    ctx.stroke();
+                }
+            });
+
+            // Orange-highlighted nodes (with text)
+            personData.nodes.forEach(node => {
+                const pos = nodePositions.get(node);
+                const dims = nodeDimensions.get(node);
+                if (!pos || !dims) return;
+
+                ctx.fillStyle = '#f97316';
+                ctx.strokeStyle = '#c2410c';
+                ctx.lineWidth = 2;
+
+                if (dims.type === 'circle') {
+                    ctx.beginPath();
+                    ctx.arc(pos.x, pos.y, dims.radius + 4, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.stroke();
+                    ctx.fillStyle = '#ffffff';
+                    ctx.font = 'bold 14px sans-serif';
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+                    ctx.fillText(node, pos.x, pos.y);
+                } else {
+                    ctx.fillRect(pos.x - dims.width / 2 - 4, pos.y - dims.height / 2 - 4, dims.width + 8, dims.height + 8);
+                    ctx.strokeRect(pos.x - dims.width / 2 - 4, pos.y - dims.height / 2 - 4, dims.width + 8, dims.height + 8);
+                    ctx.fillStyle = '#ffffff';
+                    ctx.font = '12px sans-serif';
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+                    ctx.fillText(node, pos.x, pos.y);
+                }
+            });
+
+            ctx.restore();
+        };
+
+        // Redraw base + highlights
+        draw();
+        window.drawHighlights();
+        console.log("drawhighlights1")
+
+    } else {
+        delete window.highlightedPerson;
+        window.drawHighlights = null;
+        draw();
+    }
+}
+
+
 // Get nodes and connections
 const nodeMap = new Map();
 const connectionMap = new Map();
@@ -202,7 +308,14 @@ function draw() {
     });
     
     ctx.restore();
+    // redraw highlights if enabled
+    if(document.getElementById("showIndividual").checked) {
+        window.drawHighlights();
+    }
+
 }
+
+
 
 // Pan controls
 canvas.addEventListener('mousedown', (e) => {
@@ -317,6 +430,7 @@ canvas.addEventListener('wheel', (e) => {
     panX = mouseX - worldX * scale;
     panY = mouseY - worldY * scale;
     draw();
+    
 }, { passive: false });
 
 resizeCanvas();
