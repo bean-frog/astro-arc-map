@@ -1,45 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Astro ARC mind map</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-        html {
-            background-image: url("assets/pinwheel_galaxy.jpeg");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+      html {
+        background-image: url("assets/pinwheel_galaxy.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="overflow-hidden relative w-screen h-screen bg-transparent">
-<div class="flex relative z-10 flex-col p-4 m-4 rounded-md border shadow bg-gray-800/85 h-fit w-fit">
-            <h1 class="text-2xl font-bold text-white">
-            Astro ARC Mind Map
-            </h1>
-            <p class="text-white text-md">Astronomy mind map displaying the collective prior knowledge of the Oregon Astro ARC (Fall 2025)</p>
-            <p class="text-white text-md">Pan with mouse, zoom with scroll</p>
-            <p class="text-lg font-bold text-red-500">CURRENTLY USING DUMMY DATA FOR DEVELOPMENT PURPOSES</p>  
-            <div class="p-2 rounded-md border shadow w-fit">
-                <p class="text-white text-md">Highlight contributions:</p>
+      <div
+        class="flex relative z-10 flex-col p-4 m-4 rounded-md border shadow bg-gray-800/85 h-fit w-fit"
+      >
+        <h1 class="text-2xl font-bold text-white">Astro ARC Mind Map</h1>
+        <p class="text-white text-md">
+          Astronomy mind map displaying the collective prior knowledge of the
+          Oregon Astro ARC (Fall 2025)
+        </p>
+        <p class="text-white text-md">Pan with mouse, zoom with scroll</p>
+        <p class="text-lg font-bold text-red-500">
+          CURRENTLY USING DUMMY DATA FOR DEVELOPMENT PURPOSES
+        </p>
+
+        <div class="flex flex-row gap-2 items-center">
+          <div class="p-2 rounded-md border shadow w-fit">
+            <p class="text-white text-md">Highlight contributions:</p>
             <div class="flex flex-row items-center">
-                <input type="checkbox" name="showIndividual" id="showIndividual" class="p-2 mr-2 w-5 h-5 text-white bg-transparent rounded-md border shadow">
-                <select name="nameSelector" id="nameSelector" class="px-2 py-1 text-white bg-gray-900 rounded-md border shadow h-fit w-fit"></select>
+              <input
+                type="checkbox"
+                name="showIndividual"
+                id="showIndividual"
+                class="checkbox checkbox-md"
+              />
+              <!-- <select name="nameSelector" id="nameSelector" class="px-2 py-1 text-white bg-gray-900 rounded-md border shadow h-fit w-fit"></select> -->
+              <select
+                name="nameSelector"
+                id="nameSelector"
+                class="select select-sm"
+              ></select>
             </div>
-            </div>
-            
-           
+          </div>
 
-                <a target="_blank" href="https://github.com/bean-frog/astro-arc-map" class="text-white underline">source code</a>
-                <a target="_blank" href="https://app.astrobin.com/i/v759lh" class="text-white underline">image: Pinwheel Galaxy (M101) by Mike Kieran</a>
+          <button class="btn" onclick="statsModal.showModal()">
+            View Stats
+          </button>
+          <dialog id="statsModal" class="modal">
+            <div class="max-w-5xl modal-box">
+              <h3 class="text-lg font-bold">Stats</h3>
+              <div class="flex flex-col justify-center items-center p-2">
+                <div class="flex flex-row gap-2 items-center">
+                  <div class="border shadow stats">
+                    <div class="stat">
+                      <div class="text-gray-300 stat-title">Contributors</div>
+                      <div class="text-white stat-value"id="totalContributors">null</div>
+                    </div>
+                  </div>
+                  <div class="border shadow stats">
+                    <div class="stat">
+                      <div class="text-gray-300 stat-title">Unique Words</div>
+                      <div class="text-white stat-value"id="uniqueWords">null</div>
+                    </div>
+                  </div>
+                   <div class="border shadow stats">
+                    <div class="stat">
+                      <div class="text-gray-300 stat-title">Unique Connections</div>
+                      <div class="text-white stat-value"id="uniqueConnections">null</div>
+                    </div>
+                  </div>
+                </div>
+
+<div class="flex gap-2 mt-2">
+  <button id="sortWordBtn" class="btn btn-sm">Sort A–Z</button>
+  <button id="sortAppearancesBtn" class="btn btn-sm">Sort by Appearances</button>
+  <button id="sortConnectionsBtn" class="btn btn-sm">Sort by Connections</button>
+</div>
+
+<div class="overflow-x-auto mt-2">
+  <div class="overflow-y-auto max-h-60">
+    <table class="table w-full">
+      <thead class="sticky top-0 z-10 bg-neutral">
+        <tr>
+          <th>Word</th>
+          <th># of Appearances</th>
+          <th># of Connections</th>
+        </tr>
+      </thead>
+      <tbody id="statsWordsBody">
+        <!-- Rows generated dynamically -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+
+
+
+                
+              </div>
+              <p class="py-4">Press ESC key or click outside to close</p>
+            </div>
+            <form method="dialog" class="modal-backdrop">
+              <button>close</button>
+            </form>
+          </dialog>
         </div>
-<canvas id="map" class="absolute inset-0 z-0 w-full h-full"></canvas>
-        <div id="tooltip" class="absolute px-3 py-2 m-0 max-w-xs text-sm text-white bg-gray-800 rounded-lg shadow-lg opacity-0"></div>
-    </div>
-</body>
-<script src="data.js"></script>
-<script src="main.js"></script>
-</html>
 
+        <a
+          target="_blank"
+          href="https://github.com/bean-frog/astro-arc-map"
+          class="text-white underline"
+          >source code</a
+        >
+        <a
+          target="_blank"
+          href="https://app.astrobin.com/i/v759lh"
+          class="text-white underline"
+          >image: Pinwheel Galaxy (M101) by Mike Kieran</a
+        >
+      </div>
+      <canvas id="map" class="absolute inset-0 z-0 w-full h-full"></canvas>
+      <div
+        id="tooltip"
+        class="absolute px-3 py-2 m-0 max-w-xs text-sm text-white bg-gray-800 rounded-lg shadow-lg opacity-0"
+      ></div>
+    </div>
+  </body>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</html>
