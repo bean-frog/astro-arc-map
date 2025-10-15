@@ -1,0 +1,13 @@
+Tasks
+
+priority | task
+
+LOW | switch to different dataset (for later versions of mind maps)
+MED | fix anti-collision logic (maybe add slight radial offset, alternating positive and negative)
+HIGH | per-contributor stats
+MED | center web on first render
+
+
+Ideas
+
+randomized background
