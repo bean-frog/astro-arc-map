@@ -36,13 +36,13 @@
                 type="checkbox"
                 name="showIndividual"
                 id="showIndividual"
-                class="checkbox checkbox-md"
+                class="checkbox checkbox-md nameSelectElement"
               />
               <!-- <select name="nameSelector" id="nameSelector" class="px-2 py-1 text-white bg-gray-900 rounded-md border shadow h-fit w-fit"></select> -->
               <select
                 name="nameSelector"
                 id="nameSelector"
-                class="select select-sm"
+                class="select select-sm nameSelectElement"
               ></select>
             </div>
           </div>
@@ -53,58 +53,149 @@
           <dialog id="statsModal" class="modal">
             <div class="max-w-5xl modal-box">
               <h3 class="text-lg font-bold">Stats</h3>
-              <div class="flex flex-col justify-center items-center p-2">
-                <div class="flex flex-row gap-2 items-center">
-                  <div class="border shadow stats">
-                    <div class="stat">
-                      <div class="text-gray-300 stat-title">Contributors</div>
-                      <div class="text-white stat-value"id="totalContributors">null</div>
+
+              <div role="tablist" class="tabs tabs-bordered">
+                <input
+                  type="radio"
+                  checked
+                  name="my_tabs_1"
+                  role="tab"
+                  class="tab"
+                  aria-label="All"
+                />
+                <div role="tabpanel" class="p-10 tab-content">
+                  <div class="flex flex-col justify-center items-center p-2">
+                    <div class="flex flex-row gap-2 items-center">
+                      <div class="border shadow stats">
+                        <div class="stat">
+                          <div class="text-gray-300 stat-title">
+                            Contributors
+                          </div>
+                          <div
+                            class="text-white stat-value"
+                            id="totalContributors"
+                          >
+                            null
+                          </div>
+                        </div>
+                      </div>
+                      <div class="border shadow stats">
+                        <div class="stat">
+                          <div class="text-gray-300 stat-title">
+                            Unique Words
+                          </div>
+                          <div class="text-white stat-value" id="uniqueWords">
+                            null
+                          </div>
+                        </div>
+                      </div>
+                      <div class="border shadow stats">
+                        <div class="stat">
+                          <div class="text-gray-300 stat-title">
+                            Unique Connections
+                          </div>
+                          <div
+                            class="text-white stat-value"
+                            id="uniqueConnections"
+                          >
+                            null
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="border shadow stats">
-                    <div class="stat">
-                      <div class="text-gray-300 stat-title">Unique Words</div>
-                      <div class="text-white stat-value"id="uniqueWords">null</div>
+
+                    <div class="flex gap-2 mt-2">
+                      <button id="sortWordBtn" class="btn btn-sm">
+                        Sort A–Z
+                      </button>
+                      <button id="sortAppearancesBtn" class="btn btn-sm">
+                        Sort by Appearances
+                      </button>
+                      <button id="sortConnectionsBtn" class="btn btn-sm">
+                        Sort by Connections
+                      </button>
                     </div>
-                  </div>
-                   <div class="border shadow stats">
-                    <div class="stat">
-                      <div class="text-gray-300 stat-title">Unique Connections</div>
-                      <div class="text-white stat-value"id="uniqueConnections">null</div>
+
+                    <div class="overflow-x-auto mt-2">
+                      <div class="overflow-y-auto max-h-60">
+                        <table class="table w-full">
+                          <thead class="sticky top-0 z-10 bg-neutral">
+                            <tr>
+                              <th>Word</th>
+                              <th># of Appearances</th>
+                              <th># of Connections</th>
+                            </tr>
+                          </thead>
+                          <tbody id="statsWordsBody">
+                            <!-- Rows generated dynamically -->
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-<div class="flex gap-2 mt-2">
-  <button id="sortWordBtn" class="btn btn-sm">Sort A–Z</button>
-  <button id="sortAppearancesBtn" class="btn btn-sm">Sort by Appearances</button>
-  <button id="sortConnectionsBtn" class="btn btn-sm">Sort by Connections</button>
-</div>
+                <input
+                  type="radio"
+                  name="my_tabs_1"
+                  role="tab"
+                  class="tab"
+                  aria-label="Individual"
+                />
+                <div role="tabpanel" class="p-10 tab-content">
+                  <div class="flex flex-col justify-center items-center p-2">
+                    <div class="p-2 m-2">
+                      <select
+                        name="nameSelector"
+                        id="individualNameSelector"
+                        class="select select-md select-bordered"
+                      ></select>
+                    </div>
 
-<div class="overflow-x-auto mt-2">
-  <div class="overflow-y-auto max-h-60">
-    <table class="table w-full">
-      <thead class="sticky top-0 z-10 bg-neutral">
-        <tr>
-          <th>Word</th>
-          <th># of Appearances</th>
-          <th># of Connections</th>
-        </tr>
-      </thead>
-      <tbody id="statsWordsBody">
-        <!-- Rows generated dynamically -->
-      </tbody>
-    </table>
-  </div>
-</div>
-
-
-
-
-
-
-                
+                    <div class="flex flex-row gap-2 items-center">
+                      <div class="border shadow stats">
+                        <div class="stat">
+                          <div class="text-gray-300 stat-title">Words</div>
+                          <div
+                            class="text-white stat-value"
+                            id="individualWords"
+                          >
+                            null
+                          </div>
+                        </div>
+                      </div>
+                      <div class="border shadow stats">
+                        <div class="stat">
+                          <div class="text-gray-300 stat-title">
+                            Connections
+                          </div>
+                          <div
+                            class="text-white stat-value"
+                            id="individualConnections"
+                          >
+                            null
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="overflow-y-auto mt-2 max-h-60 rounded-md border shadow"
+                    >
+                      <table class="table max-w-md table-sm">
+                        <thead>
+                          <tr></tr>
+                          <tr></tr>
+                          <tr></tr>
+                        </thead>
+                        <tbody id="individualConnectionsBody">
+                          <!-- Rows generated dynamically -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
               </div>
+
               <p class="py-4">Press ESC key or click outside to close</p>
             </div>
             <form method="dialog" class="modal-backdrop">

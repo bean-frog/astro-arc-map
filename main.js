@@ -26,7 +26,7 @@ window.mapData.forEach((person) => {
   names.push(person.name);
 });
 
-// Populate stats modal (big stats)
+// Populate stats modal (all, big stats)
 const totalContributors = document.getElementById("totalContributors");
 const uniqueWords = document.getElementById("uniqueWords");
 const uniqueConnections = document.getElementById("uniqueConnections");
@@ -34,61 +34,63 @@ const uniqueConnections = document.getElementById("uniqueConnections");
 totalContributors.innerHTML = window.mapData.length;
 
 let words = [];
-window.mapData.forEach(entry => {
-    entry.nodes.forEach(node => {
-        words.push(node)
-    })
-})
+window.mapData.forEach((entry) => {
+  entry.nodes.forEach((node) => {
+    words.push(node);
+  });
+});
 // Keep untrimmed words for later
 const allWords = words;
 // Ensure no duplicates
-words = [...new Set(words)]
+words = [...new Set(words)];
 uniqueWords.innerHTML = words.length;
 
 let conns = [];
-window.mapData.forEach(entry => {
-    entry.connections.forEach(connection => {
-        conns.push(connection)
-    })
-})
+window.mapData.forEach((entry) => {
+  entry.connections.forEach((connection) => {
+    conns.push(connection);
+  });
+});
 // Keep untrimmed connections for later
 const allConns = conns;
 // Ensure no duplicates
-conns = [...new Set(conns)]
+conns = [...new Set(conns)];
 uniqueConnections.innerHTML = conns.length;
 
-// Populate stats modal (table)
-const statsTable = document.getElementById("statsWordsBody")
+// Populate stats modal (all, table)
+const statsTable = document.getElementById("statsWordsBody");
 
-words.forEach(word => {
-    const wordCount = allWords.filter(w => w === word).length;
-    const connectionsCount = allConns.filter(conn => conn.includes(word)).length;
-    const row = statsTable.insertRow();
+words.forEach((word) => {
+  const wordCount = allWords.filter((w) => w === word).length;
+  const connectionsCount = allConns.filter((conn) =>
+    conn.includes(word),
+  ).length;
+  const row = statsTable.insertRow();
 
-    const wordCell = row.insertCell(0);
-    wordCell.textContent = word;
+  const wordCell = row.insertCell(0);
+  wordCell.textContent = word;
 
-    const wordCountCell = row.insertCell(1);
-    wordCountCell.textContent = wordCount;
+  const wordCountCell = row.insertCell(1);
+  wordCountCell.textContent = wordCount;
 
-    const connectionsCountCell = row.insertCell(2);
-    connectionsCountCell.textContent = connectionsCount;
+  const connectionsCountCell = row.insertCell(2);
+  connectionsCountCell.textContent = connectionsCount;
 });
 
 // Handle table sorting logic
-const sortWordBtn = document.getElementById('sortWordBtn');
-const sortAppearancesBtn = document.getElementById('sortAppearancesBtn');
-const sortConnectionsBtn = document.getElementById('sortConnectionsBtn');
-const statsWordsBody = document.getElementById('statsWordsBody');
+const sortWordBtn = document.getElementById("sortWordBtn");
+const sortAppearancesBtn = document.getElementById("sortAppearancesBtn");
+const sortConnectionsBtn = document.getElementById("sortConnectionsBtn");
+const statsWordsBody = document.getElementById("statsWordsBody");
 
 function sortTable(compareFn) {
-  const rows = Array.from(statsWordsBody.querySelectorAll('tr'));
+  const rows = Array.from(statsWordsBody.querySelectorAll("tr"));
   rows.sort(compareFn);
-  rows.forEach(row => statsWordsBody.appendChild(row));
+  rows.forEach((row) => statsWordsBody.appendChild(row));
 }
 
-// Sort alphabetically 
-sortWordBtn.addEventListener('click', () => {
+// Sort alphabetically
+sortWordBtn.addEventListener("click", () => {
   sortTable((a, b) => {
     const wordA = a.cells[0].textContent.toLowerCase();
     const wordB = b.cells[0].textContent.toLowerCase();
@@ -97,7 +99,7 @@ sortWordBtn.addEventListener('click', () => {
 });
 
 // Sort numerically by # of appearances
-sortAppearancesBtn.addEventListener('click', () => {
+sortAppearancesBtn.addEventListener("click", () => {
   sortTable((a, b) => {
     const numA = parseInt(a.cells[1].textContent, 10);
     const numB = parseInt(b.cells[1].textContent, 10);
@@ -106,7 +108,7 @@ sortAppearancesBtn.addEventListener('click', () => {
 });
 
 // Sort numerically by # of connections
-sortConnectionsBtn.addEventListener('click', () => {
+sortConnectionsBtn.addEventListener("click", () => {
   sortTable((a, b) => {
     const numA = parseInt(a.cells[2].textContent, 10);
     const numB = parseInt(b.cells[2].textContent, 10);
@@ -114,11 +116,56 @@ sortConnectionsBtn.addEventListener('click', () => {
   });
 });
 
+// Handle indiviual stats tab
+const individualNameSelector = document.getElementById(
+  "individualNameSelector",
+);
+// Add names to DOM element
+names.forEach((name) => {
+  let nameOption = document.createElement("option");
+  nameOption.classList.add("bg-transparent", "px-2", "py-1");
+  nameOption.innerText = name;
+  nameOption.value = name;
+  individualNameSelector.insertAdjacentElement("beforeend", nameOption);
+});
+// repopulate stats on selector change
+individualNameSelector.addEventListener("change", populateIndividualStats);
 
+// populate individual stats
+function populateIndividualStats() {
+  const name = individualNameSelector.value;
+  const personData = window.mapData.find((p) => p.name === name);
+  if (!personData) return;
+
+  // big stats
+  document.getElementById("individualWords").innerHTML =
+    personData.nodes.length;
+  document.getElementById("individualConnections").innerHTML =
+    personData.connections.length;
+
+  // connections
+  personData.connections.forEach((connection) => {
+    const tableBody = document.getElementById("individualConnectionsBody");
+    const row = tableBody.insertRow();
+    const word1Cell = row.insertCell(0);
+    word1Cell.textContent = connection[0];
+    word1Cell.classList.add("text-right");
+    const dividerCell = row.insertCell(1);
+    dividerCell.textContent = "<────────>";
+    dividerCell.classList.add("text-center");
+    const word2Cell = row.insertCell(2);
+    word2Cell.textContent = connection[1];
+    word2Cell.classList.add("text-left");
+  });
+}
+// Initial population
+populateIndividualStats();
 
 const nameSelector = document.getElementById("nameSelector");
+
 const showNameCheckbox = document.getElementById("showIndividual");
 // Add names to DOM element
+// DRY violation but it runs and this project is full of them anyway
 names.forEach((name) => {
   let nameOption = document.createElement("option");
   nameOption.classList.add("bg-transparent", "px-2", "py-1");
@@ -126,6 +173,7 @@ names.forEach((name) => {
   nameOption.value = name;
   nameSelector.insertAdjacentElement("beforeend", nameOption);
 });
+
 // change highlight on name selector change
 nameSelector.addEventListener("change", function () {
   console.log("change called");
@@ -133,7 +181,7 @@ nameSelector.addEventListener("change", function () {
   selAndDraw();
 });
 
-// Store drawHighlights function globally so it can be reused
+// Store drawHighlights function globally
 window.drawHighlights = null;
 
 // Handle selector activation
