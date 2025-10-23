@@ -1,3 +1,9 @@
+/**
+ * Astro ARC Mind Map main.js
+ * Author: beanfrog / Graeme Kieran
+ * License: MIT
+ */
+
 const canvas = document.getElementById("map");
 const ctx = canvas.getContext("2d");
 const tooltip = document.getElementById("tooltip");
@@ -19,6 +25,8 @@ function resizeCanvas() {
   draw();
 }
 window.addEventListener("resize", resizeCanvas);
+
+// Data Prep
 
 // Get names (used in single person display)
 let names = [];
@@ -57,7 +65,7 @@ const allConns = conns;
 conns = [...new Set(conns)];
 uniqueConnections.innerHTML = conns.length;
 
-// Populate stats modal (all, table)
+// === Stats Table Population and Sorting ===
 const statsTable = document.getElementById("statsWordsBody");
 
 words.forEach((word) => {
@@ -116,10 +124,11 @@ sortConnectionsBtn.addEventListener("click", () => {
   });
 });
 
-// Handle indiviual stats tab
+// === Individual Stats Tab ===
 const individualNameSelector = document.getElementById(
   "individualNameSelector",
 );
+
 // Add names to DOM element
 names.forEach((name) => {
   let nameOption = document.createElement("option");
@@ -128,6 +137,7 @@ names.forEach((name) => {
   nameOption.value = name;
   individualNameSelector.insertAdjacentElement("beforeend", nameOption);
 });
+
 // repopulate stats on selector change
 individualNameSelector.addEventListener("change", populateIndividualStats);
 
@@ -161,11 +171,13 @@ function populateIndividualStats() {
 // Initial population
 populateIndividualStats();
 
-const nameSelector = document.getElementById("nameSelector");
+// Name selector and highlight controls
 
+
+const nameSelector = document.getElementById("nameSelector");
 const showNameCheckbox = document.getElementById("showIndividual");
+
 // Add names to DOM element
-// DRY violation but it runs and this project is full of them anyway
 names.forEach((name) => {
   let nameOption = document.createElement("option");
   nameOption.classList.add("bg-transparent", "px-2", "py-1");
@@ -268,7 +280,7 @@ function selAndDraw() {
   }
 }
 
-// Get nodes and connections
+// Node/Connection maps
 const nodeMap = new Map();
 const connectionMap = new Map();
 
@@ -288,9 +300,8 @@ window.mapData.forEach((person) => {
     connectionMap.get(key).push(person.name);
   });
 });
-//
 
-// Create node positions
+// Node layout and position
 const nodes = Array.from(nodeMap.keys());
 const nodePositions = new Map();
 const centerX = canvas.width / 2;
@@ -299,7 +310,6 @@ const MIN_NODE_DISTANCE = 120;
 
 // Center "Astronomy" node
 nodePositions.set("Astronomy", { x: centerX, y: centerY });
-
 const otherNodes = nodes.filter((n) => n !== "Astronomy");
 
 function ringCapacity(radius) {
@@ -365,7 +375,7 @@ for (let iteration = 0; iteration < 50; iteration++) {
   });
 }
 
-// Calculate node dimensions
+// Node dimension calculations
 const nodeDimensions = new Map();
 nodeMap.forEach((people, node) => {
   const isCenter = node === "Astronomy";
@@ -391,10 +401,9 @@ nodeMap.forEach((people, node) => {
   }
 });
 
-// Draw everything
+// Main draw function
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-
   ctx.save();
   ctx.translate(panX, panY);
   ctx.scale(scale, scale);
@@ -464,6 +473,8 @@ function draw() {
     window.drawHighlights();
   }
 }
+
+// Interactions (pan, zoom)
 
 // Pan controls
 canvas.addEventListener("mousedown", (e) => {
@@ -601,4 +612,5 @@ canvas.addEventListener(
   { passive: false },
 );
 
+// Start rendering
 resizeCanvas();
