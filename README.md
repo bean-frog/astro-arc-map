@@ -4,6 +4,10 @@
 
 Digital mind map of prior knowledge of astronomy concepts from the UOregon Astro ARC (Fall 2025)
 
+some notes:
+- `data-entry.js` is a tool to (somewhat) quickly enter data from a physical medium to the format used by the map.
+- don't directly edit `style.css` as it is dynamically built and minified by Tailwind.
+
 Licensed under the MIT License, as follows: 
 ```
 Copyright 2025 beanfrog / Graeme Kieran
