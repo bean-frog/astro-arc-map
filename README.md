@@ -5,7 +5,10 @@
 Digital mind map of prior knowledge of astronomy concepts from the UOregon Astro ARC (Fall 2025)
 
 some notes:
-- `data-entry.js` is a tool to (somewhat) quickly enter data from a physical medium to the format used by the map.
+- `/data-entry` contains some scripts to create the data structures from a physical medium.
+- `data-entry.js` creates the entire data array with every person
+- `single-person.js` creates only the inner object for a single person, in the `./output` directory
+- `merge.js` takes a directory (containing output files from `single-person.js`) and combines them into one large data object.
 - don't directly edit `style.css` as it is dynamically built and minified by Tailwind.
 
 Licensed under the MIT License, as follows: 
