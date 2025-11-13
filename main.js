@@ -527,24 +527,26 @@ canvas.addEventListener("mousedown", (e) => {
   startPanX = e.clientX - panX;
   startPanY = e.clientY - panY;
   canvas.style.cursor = "grabbing";
+
+  // Prevent unwanted selection
+  e.preventDefault();
 });
 
-canvas.addEventListener("mouseup", () => {
-  isPanning = false;
-  canvas.style.cursor = "grab";
+window.addEventListener("mouseup", () => {
+  if (isPanning) {
+    isPanning = false;
+    canvas.style.cursor = "grab";
+  }
 });
 
-canvas.addEventListener("mouseleave", () => {
-  isPanning = false;
-  canvas.style.cursor = "grab";
-});
-
-canvas.addEventListener("mousemove", (e) => {
+// Handle panning and tooltips
+window.addEventListener("mousemove", (e) => {
+ // Skip tooltips while panning
   if (isPanning) {
     panX = e.clientX - startPanX;
     panY = e.clientY - startPanY;
     draw();
-    return;
+    return; 
   }
 
   const rect = canvas.getBoundingClientRect();
@@ -610,6 +612,7 @@ canvas.addEventListener("mousemove", (e) => {
   if (!found) tooltip.style.opacity = "0";
   canvas.style.cursor = found ? "pointer" : "grab";
 });
+
 
 // Distance to line
 function distanceToLine(px, py, x1, y1, x2, y2) {
