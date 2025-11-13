@@ -4,11 +4,14 @@
  * License: MIT
  */
 
-// Fetch data
-fetch('/data.json')
-  .then(res => res.json())
-  .then(data => window.mapData = data);
+(async () => {
+  const res = await fetch('./data.json');
+  window.mapData = await res.json();
+
   
+  
+
+
 const canvas = document.getElementById("map");
 const ctx = canvas.getContext("2d");
 const tooltip = document.getElementById("tooltip");
@@ -619,3 +622,4 @@ canvas.addEventListener(
 
 // Start rendering
 resizeCanvas();
+})();
