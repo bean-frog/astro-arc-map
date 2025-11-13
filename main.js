@@ -433,47 +433,84 @@ function draw() {
   });
 
   // Nodes
-  nodeMap.forEach((people, node) => {
-    const pos = nodePositions.get(node);
-    const dims = nodeDimensions.get(node);
-    if (!pos || !dims) return;
+nodeMap.forEach((people, node) => {
+  const pos = nodePositions.get(node);
+  const dims = nodeDimensions.get(node);
+  if (!pos || !dims) return;
 
-    if (dims.type === "circle") {
-      ctx.fillStyle = "#3b82f6";
-      ctx.beginPath();
-      ctx.arc(pos.x, pos.y, dims.radius, 0, 2 * Math.PI);
-      ctx.fill();
-      ctx.strokeStyle = "#1e40af";
-      ctx.lineWidth = 2;
-      ctx.stroke();
-      ctx.fillStyle = "#ffffff";
-      ctx.font = "bold 14px sans-serif";
-      ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-      ctx.fillText(node, pos.x, pos.y);
-    } else {
-      ctx.fillStyle = "#60a5fa";
-      ctx.fillRect(
-        pos.x - dims.width / 2,
-        pos.y - dims.height / 2,
-        dims.width,
-        dims.height,
-      );
-      ctx.strokeStyle = "#1e40af";
-      ctx.lineWidth = 2;
-      ctx.strokeRect(
-        pos.x - dims.width / 2,
-        pos.y - dims.height / 2,
-        dims.width,
-        dims.height,
-      );
-      ctx.fillStyle = "#ffffff";
-      ctx.font = "12px sans-serif";
-      ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-      ctx.fillText(node, pos.x, pos.y);
-    }
-  });
+  // Global shadow
+  ctx.shadowColor = "rgba(0, 0, 0, 0.35)";
+  ctx.shadowBlur = 8;
+  ctx.shadowOffsetX = 0;
+  ctx.shadowOffsetY = 3;
+
+  const fillColor = "rgba(31, 41, 55, 0.85)";        // bg-gray-800/85
+  const strokeColor = "rgba(148, 163, 184, 0.35)";   // slate-400/35
+  const glowColor = "rgba(99, 102, 241, 0.8)";       // indigo-500-ish
+
+  if (dims.type === "circle") {
+    // Fill
+    ctx.fillStyle = fillColor;
+    ctx.beginPath();
+    ctx.arc(pos.x, pos.y, dims.radius, 0, 2 * Math.PI);
+    ctx.fill();
+
+    // Border
+    ctx.shadowBlur = 2; 
+    ctx.strokeStyle = glowColor;
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    // Label
+    ctx.shadowBlur = 0;
+    ctx.fillStyle = "#fff";
+    ctx.font = "500 14px 'Inter', sans-serif";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText(node, pos.x, pos.y);
+
+  } else {
+    const x = pos.x - dims.width / 2;
+    const y = pos.y - dims.height / 2;
+    const w = dims.width;
+    const h = dims.height;
+    const r = 10;
+
+    // Rounded rectangle path
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.lineTo(x + w - r, y);
+    ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+    ctx.lineTo(x + w, y + h - r);
+    ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+    ctx.lineTo(x + r, y + h);
+    ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+    ctx.lineTo(x, y + r);
+    ctx.quadraticCurveTo(x, y, x + r, y);
+
+    // Fill
+    ctx.fillStyle = fillColor;
+    ctx.fill();
+
+    // Border glow
+    ctx.shadowBlur = 2;
+    ctx.strokeStyle = glowColor;
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    // Text
+    ctx.shadowBlur = 0;
+    ctx.fillStyle = "#fff";
+    ctx.font = "500 13px 'Inter', sans-serif";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText(node, pos.x, pos.y);
+  }
+
+  // Reset effects
+  ctx.shadowBlur = 0;
+});
+
 
   ctx.restore();
   // redraw highlights if enabled
