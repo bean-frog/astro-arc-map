@@ -4,12 +4,19 @@
 
 Digital mind map of prior knowledge of astronomy concepts from the UOregon Astro ARC (Fall 2025)
 
-some notes:
-- `/data-entry` contains some scripts to create the data structures from a physical medium.
-- `data-entry.js` creates the entire data array with every person
-- `single-person.js` creates only the inner object for a single person, in the `./output` directory
-- `merge.js` takes a directory (containing output files from `single-person.js`) and combines them into one large data object.
-- don't directly edit `style.css` as it is dynamically built and minified by Tailwind.
+### Dev Info
+- Styled with Tailwind + DaisyUI. Use `npm run tw` to automatically detect changes and rebuild the css.
+- Use `npm run fmt` to format with Prettier.
+
+### Data Entry Scripts
+Both can be run with `node script.js` or `./script.js`
+- `single-person.js`
+	- Enter the person's name as prompted, then enter all connections in the form 'NodeA-NodeB'
+	- Enter 'done' when finished, will save as `./output/Name.json`
+- `merge.js <directory>`
+	- takes a directory to JSON files (e.g. `./output`) and consolidates them into a single javascript file that sets `window.mapData`. Just update the reference in `index.html`, or copy the contents to `./data.js`.
+	
+
 
 Licensed under the MIT License, as follows: 
 ```
