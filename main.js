@@ -4,6 +4,11 @@
  * License: MIT
  */
 
+// Fetch data
+fetch('/data.json')
+  .then(res => res.json())
+  .then(data => window.mapData = data);
+  
 const canvas = document.getElementById("map");
 const ctx = canvas.getContext("2d");
 const tooltip = document.getElementById("tooltip");
@@ -15,7 +20,7 @@ let isPanning = false;
 let startPanX = 0;
 let startPanY = 0;
 let scale = 2.3; // zoom level
-const MIN_SCALE = 0.3; // min zoom out
+const MIN_SCALE = 0.1; // min zoom out
 const MAX_SCALE = 3; // max zoom in
 const SCALE_FACTOR = 1.1; // zoom step
 
