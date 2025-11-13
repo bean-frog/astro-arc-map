@@ -19,30 +19,23 @@ async function main() {
     rl.close();
     return;
   }
-
-  // Collect nodes
-  let nodes = [];
-  console.log(`\nEnter nodes for ${name} (type 'done' when finished):`);
-  while (true) {
-    const node = await ask('  Node: ');
-    if (node.toLowerCase() === 'done') break;
-    if (node) nodes.push(node);
-  }
-
-  // Collect connections
+  
   let connections = [];
-  console.log(`\nEnter connections (format: "NodeA - NodeB", type 'done' when finished):`);
+  console.log(`\nEnter connections for ${name} (format: "NodeA - NodeB", type 'done' when finished):`);
   while (true) {
     const conn = await ask('  Connection: ');
     if (conn.toLowerCase() === 'done') break;
 
     const parts = conn.split(/\s*-\s*/);
-    if (parts.length === 2 && nodes.includes(parts[0]) && nodes.includes(parts[1])) {
+    if (parts.length === 2 && parts[0] && parts[1]) {
       connections.push(parts);
     } else {
-      console.log('Invalid connection. Make sure both nodes exist and format is "NodeA - NodeB".');
+      console.log('Invalid format. Use "NodeA - NodeB".');
     }
   }
+
+  // Derive nodes from connections
+  const nodes = Array.from(new Set(connections.flat()));
 
   const personData = { name, nodes, connections };
 
@@ -56,7 +49,7 @@ async function main() {
   const filePath = path.join(outputDir, filename);
 
   fs.writeFileSync(filePath, JSON.stringify(personData, null, 2), 'utf8');
-  console.log(`\n✅ Saved to ${filePath}`);
+  console.log(`\nSaved to ${filePath}`);
 
   rl.close();
 }

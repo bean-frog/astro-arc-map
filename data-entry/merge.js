@@ -7,7 +7,7 @@ async function main() {
 
   if (!dir) {
     console.log('Please provide a directory path.');
-    console.log('Usage: node combineMaps.js ./people');
+    console.log('Usage: node merge.js ./path-to-data');
     process.exit(1);
   }
 
@@ -46,7 +46,7 @@ async function main() {
   const outputFile = path.join(dir, 'mapData.js');
   fs.writeFileSync(outputFile, output, 'utf8');
 
-  console.log(`\n Combined data saved to ${outputFile}`);
+  console.log(`\nSaved to ${outputFile}`);
 }
 
 main();
