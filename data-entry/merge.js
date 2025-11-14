@@ -1,13 +1,13 @@
 #!/usr/bin/env node
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 async function main() {
   const dir = process.argv[2];
 
   if (!dir) {
-    console.log('Please provide a directory path.');
-    console.log('Usage: node merge.js ./path-to-data');
+    console.log("Please provide a directory path.");
+    console.log("Usage: node merge.js ./path-to-data");
     process.exit(1);
   }
 
@@ -16,9 +16,9 @@ async function main() {
     process.exit(1);
   }
 
-  const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".json"));
   if (files.length === 0) {
-    console.log('No JSON files found in that directory.');
+    console.log("No JSON files found in that directory.");
     process.exit(0);
   }
 
@@ -27,11 +27,15 @@ async function main() {
   for (const file of files) {
     const filePath = path.join(dir, file);
     try {
-      const content = fs.readFileSync(filePath, 'utf8');
+      const content = fs.readFileSync(filePath, "utf8");
       const person = JSON.parse(content);
 
       // Validate structure
-      if (person.name && Array.isArray(person.nodes) && Array.isArray(person.connections)) {
+      if (
+        person.name &&
+        Array.isArray(person.nodes) &&
+        Array.isArray(person.connections)
+      ) {
         combined.push(person);
         console.log(`Added: ${person.name}`);
       } else {
@@ -43,8 +47,8 @@ async function main() {
   }
 
   const output = `window.mapData = ${JSON.stringify(combined, null, 2)};\n`;
-  const outputFile = path.join(dir, 'mapData.js');
-  fs.writeFileSync(outputFile, output, 'utf8');
+  const outputFile = path.join(dir, "mapData.js");
+  fs.writeFileSync(outputFile, output, "utf8");
 
   console.log(`\nSaved to ${outputFile}`);
 }

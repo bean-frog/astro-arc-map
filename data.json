@@ -49,7 +49,6 @@
       "Kuiper Belt",
       "Orbits",
       "Pine Mountain Observatory",
-      "Pine Mountain",
       "Dry",
       "High Altitude",
       "Minimal Light Pollution",
@@ -70,270 +69,72 @@
       "Dark Matter"
     ],
     "connections": [
-      [
-        "Astronomy",
-        "Theories"
-      ],
-      [
-        "Theories",
-        "Time"
-      ],
-      [
-        "Theories",
-        "Big Crunch"
-      ],
-      [
-        "Theories",
-        "Black Holes"
-      ],
-      [
-        "Theories",
-        "Wormholes"
-      ],
-      [
-        "Astronomy",
-        "Universe"
-      ],
-      [
-        "Universe",
-        "Life"
-      ],
-      [
-        "Universe",
-        "Nebulae"
-      ],
-      [
-        "Universe",
-        "Motion"
-      ],
-      [
-        "Nebulae",
-        "Orion"
-      ],
-      [
-        "Universe",
-        "Dimensions"
-      ],
-      [
-        "Universe",
-        "Galaxies"
-      ],
-      [
-        "Galaxies",
-        "Black Holes"
-      ],
-      [
-        "Black Holes",
-        "Gravitational Pull"
-      ],
-      [
-        "Gravitational Pull",
-        "Electromagnetism"
-      ],
-      [
-        "Gravitational Pull",
-        "Poles"
-      ],
-      [
-        "Galaxies",
-        "Variable Stars"
-      ],
-      [
-        "Variable Stars",
-        "Luminosity"
-      ],
-      [
-        "Variable Stars",
-        "Meteors"
-      ],
-      [
-        "Variable Stars",
-        "Big Dipper"
-      ],
-      [
-        "Variable Stars",
-        "Planets"
-      ],
-      [
-        "Planets",
-        "Moons"
-      ],
-      [
-        "Moons",
-        "Satellites"
-      ],
-      [
-        "Planets",
-        "Jupiter"
-      ],
-      [
-        "Jupiter",
-        "Europa"
-      ],
-      [
-        "Jupiter",
-        "Callisto"
-      ],
-      [
-        "Jupiter",
-        "Io"
-      ],
-      [
-        "Jupiter",
-        "Ganymede"
-      ],
-      [
-        "Jupyter",
-        "Red Spot"
-      ],
-      [
-        "Planets",
-        "Dwarf Planets"
-      ],
-      [
-        "Dwarf Planets",
-        "Makemake"
-      ],
-      [
-        "Dwarf Planets",
-        "Pluto"
-      ],
-      [
-        "Dwarf Planets",
-        "Eris"
-      ],
-      [
-        "Planets",
-        "Core"
-      ],
-      [
-        "Galaxies",
-        "Gravitational Pull"
-      ],
-      [
-        "Universe",
-        "Wormholes"
-      ],
-      [
-        "Universe",
-        "Quasars"
-      ],
-      [
-        "Universe",
-        "Superclusters"
-      ],
-      [
-        "Superclusters",
-        "Star Clusters"
-      ],
-      [
-        "Universe",
-        "Big Bang"
-      ],
-      [
-        "Galaxies",
-        "Milky Way"
-      ],
-      [
-        "Galaxies",
-        "Andromeda"
-      ],
-      [
-        "Milky Way",
-        "Proxima Centauri"
-      ],
-      [
-        "Milky Way",
-        "Solar System"
-      ],
-      [
-        "Solar System",
-        "Asteroid Belt"
-      ],
-      [
-        "Solar System",
-        "Kuiper Belt"
-      ],
-      [
-        "Solar System",
-        "Orbits"
-      ],
-      [
-        "Astronomy",
-        "Pine Mountain Observatory"
-      ],
-      [
-        "Pine Mountain Observatory",
-        "Dry"
-      ],
-      [
-        "Pine Mountain Observatory",
-        "High Altitude"
-      ],
-      [
-        "Pine Mountain Observatory",
-        "Minimal Light Pollution"
-      ],
-      [
-        "Pine Mountain Observatory",
-        "Telescopes"
-      ],
-      [
-        "Telescopes",
-        "Ra/Dec"
-      ],
-      [
-        "Telescopes",
-        "Software"
-      ],
-      [
-        "Software",
-        "SkyX"
-      ],
-      [
-        "Telescopes",
-        "Hubble"
-      ],
-      [
-        "Telescopes",
-        "Cassini"
-      ],
-      [
-        "Telescopes",
-        "Gemini N/S"
-      ],
-      [
-        "Telescopes",
-        "Electromagnetic Spectrum"
-      ],
-      [
-        "Electromagnetic Spectrum",
-        "Infrared"
-      ],
-      [
-        "Telescopes",
-        "CCD Cameras"
-      ],
-      [
-        "CCD Cameras",
-        "Electrons"
-      ],
-      [
-        "Telescopes",
-        "Optic Lenses"
-      ],
-      [
-        "Optic Lenses",
-        "Foci"
-      ],
-      [
-        "Optic Lenses",
-        "Mirrors"
-      ],
-      [
-        "Universe",
-        "Dark Matter"
-      ]
+      ["Astronomy", "Theories"],
+      ["Theories", "Time"],
+      ["Theories", "Big Crunch"],
+      ["Theories", "Black Holes"],
+      ["Theories", "Wormholes"],
+      ["Astronomy", "Universe"],
+      ["Universe", "Life"],
+      ["Universe", "Nebulae"],
+      ["Universe", "Motion"],
+      ["Nebulae", "Orion"],
+      ["Universe", "Dimensions"],
+      ["Universe", "Galaxies"],
+      ["Galaxies", "Black Holes"],
+      ["Black Holes", "Gravitational Pull"],
+      ["Gravitational Pull", "Electromagnetism"],
+      ["Gravitational Pull", "Poles"],
+      ["Galaxies", "Variable Stars"],
+      ["Variable Stars", "Luminosity"],
+      ["Variable Stars", "Meteors"],
+      ["Variable Stars", "Big Dipper"],
+      ["Variable Stars", "Planets"],
+      ["Planets", "Moons"],
+      ["Moons", "Satellites"],
+      ["Planets", "Jupiter"],
+      ["Jupiter", "Europa"],
+      ["Jupiter", "Callisto"],
+      ["Jupiter", "Io"],
+      ["Jupiter", "Ganymede"],
+      ["Jupyter", "Red Spot"],
+      ["Planets", "Dwarf Planets"],
+      ["Dwarf Planets", "Makemake"],
+      ["Dwarf Planets", "Pluto"],
+      ["Dwarf Planets", "Eris"],
+      ["Planets", "Core"],
+      ["Galaxies", "Gravitational Pull"],
+      ["Universe", "Wormholes"],
+      ["Universe", "Quasars"],
+      ["Universe", "Superclusters"],
+      ["Superclusters", "Star Clusters"],
+      ["Universe", "Big Bang"],
+      ["Galaxies", "Milky Way"],
+      ["Galaxies", "Andromeda"],
+      ["Milky Way", "Proxima Centauri"],
+      ["Milky Way", "Solar System"],
+      ["Solar System", "Asteroid Belt"],
+      ["Solar System", "Kuiper Belt"],
+      ["Solar System", "Orbits"],
+      ["Astronomy", "Pine Mountain Observatory"],
+      ["Pine Mountain Observatory", "Dry"],
+      ["Pine Mountain Observatory", "High Altitude"],
+      ["Pine Mountain Observatory", "Minimal Light Pollution"],
+      ["Pine Mountain Observatory", "Telescopes"],
+      ["Telescopes", "Ra/Dec"],
+      ["Telescopes", "Software"],
+      ["Software", "SkyX"],
+      ["Telescopes", "Hubble"],
+      ["Telescopes", "Cassini"],
+      ["Telescopes", "Gemini N/S"],
+      ["Telescopes", "Electromagnetic Spectrum"],
+      ["Electromagnetic Spectrum", "Infrared"],
+      ["Telescopes", "CCD Cameras"],
+      ["CCD Cameras", "Electrons"],
+      ["Telescopes", "Optic Lenses"],
+      ["Optic Lenses", "Foci"],
+      ["Optic Lenses", "Mirrors"],
+      ["Universe", "Dark Matter"]
     ]
   },
   {
@@ -422,394 +223,103 @@
       "HR Diagrams"
     ],
     "connections": [
-      [
-        "Astronomy",
-        "History"
-      ],
-      [
-        "History",
-        "Johannes Kepler"
-      ],
-      [
-        "History",
-        "Edwin Hubble"
-      ],
-      [
-        "History",
-        "Carl Sagan"
-      ],
-      [
-        "History",
-        "Albert Einstein"
-      ],
-      [
-        "History",
-        "Galileo"
-      ],
-      [
-        "History",
-        "Ancient Greece"
-      ],
-      [
-        "Ancient Greece",
-        "Ptolemy"
-      ],
-      [
-        "Ancient Greece",
-        "Hipparchus"
-      ],
-      [
-        "Ancient Greece",
-        "Constellations"
-      ],
-      [
-        "Constellations",
-        "Stars"
-      ],
-      [
-        "History",
-        "Ancient Mesopotamia"
-      ],
-      [
-        "Ancient Mesopotamia",
-        "Constellations"
-      ],
-      [
-        "Ancient Greece",
-        "Ancient Mesopotamia"
-      ],
-      [
-        "Albert Einstein",
-        "Relativity"
-      ],
-      [
-        "Albert Einstein",
-        "Black Holes"
-      ],
-      [
-        "Albert Einstein",
-        "Wormholes"
-      ],
-      [
-        "Carl Sagan",
-        "Cosmos"
-      ],
-      [
-        "Media",
-        "Cosmos"
-      ],
-      [
-        "Media",
-        "Interstellar"
-      ],
-      [
-        "Media",
-        "Contact"
-      ],
-      [
-        "Media",
-        "Gravity"
-      ],
-      [
-        "Media",
-        "The Martian"
-      ],
-      [
-        "Astronomy",
-        "Media"
-      ],
-      [
-        "Carl Sagan",
-        "Contact"
-      ],
-      [
-        "Hubble",
-        "Doppler Shift"
-      ],
-      [
-        "Astronomical Observation",
-        "Doppler Shift"
-      ],
-      [
-        "Astronomical Observation",
-        "Spectroscopy"
-      ],
-      [
-        "Astronomical Observation",
-        "Telescopes"
-      ],
-      [
-        "Astronomy",
-        "Astronomical Observation"
-      ],
-      [
-        "Telescopes",
-        "Dobsonian"
-      ],
-      [
-        "Telescopes",
-        "Gamma"
-      ],
-      [
-        "Telescopes",
-        "UV"
-      ],
-      [
-        "Telescopes",
-        "Radio"
-      ],
-      [
-        "Telescopes",
-        "Optic"
-      ],
-      [
-        "Telescopes",
-        "Kepler"
-      ],
-      [
-        "Telescopes",
-        "Galileo"
-      ],
-      [
-        "Telescopes",
-        "Observatories"
-      ],
-      [
-        "Observatories",
-        "LIGO"
-      ],
-      [
-        "Observatories",
-        "Gemini N/S"
-      ],
-      [
-        "Observatories",
-        "Pine Mountain Observatory"
-      ],
-      [
-        "Telescopes",
-        "Microwave"
-      ],
-      [
-        "Telescopes",
-        "Reflectors"
-      ],
-      [
-        "Telescopes",
-        "Refractors"
-      ],
-      [
-        "Astronomical Observation",
-        "Parallax"
-      ],
-      [
-        "Telescopes",
-        "Hubble"
-      ],
-      [
-        "Telescopes",
-        "JWST"
-      ],
-      [
-        "Astronomical Observation",
-        "Satellites"
-      ],
-      [
-        "Satellites",
-        "Hubble"
-      ],
-      [
-        "Satellites",
-        "JWST"
-      ],
-      [
-        "Satellites",
-        "Kepler"
-      ],
-      [
-        "Satellites",
-        "Cassini"
-      ],
-      [
-        "Satellites",
-        "Parker Solar Probe"
-      ],
-      [
-        "Satellites",
-        "Voyager 1 & 2"
-      ],
-      [
-        "Astronomy",
-        "Things in Space"
-      ],
-      [
-        "Things in Space",
-        "Wormholes"
-      ],
-      [
-        "Things in Space",
-        "Planets"
-      ],
-      [
-        "Things in Space",
-        "Moons"
-      ],
-      [
-        "Things in Space",
-        "Stars"
-      ],
-      [
-        "Things in Space",
-        "Supernovae"
-      ],
-      [
-        "Things in Space",
-        "Nebulae"
-      ],
-      [
-        "Things in Space",
-        "Galaxies"
-      ],
-      [
-        "Things in Space",
-        "Asteroids"
-      ],
-      [
-        "Things in Space",
-        "Black Holes"
-      ],
-      [
-        "Things in Space",
-        "Comets"
-      ],
-      [
-        "Stars",
-        "Black Holes"
-      ],
-      [
-        "Things in Space",
-        "Cosmic Microwave Background"
-      ],
-      [
-        "Cosmic Microwave Background",
-        "Big Bang"
-      ],
-      [
-        "Big Bang",
-        "Life Cycle of the Universe"
-      ],
-      [
-        "Astronomy",
-        "Life Cycle of the Universe"
-      ],
-      [
-        "Life Cycle of the Universe",
-        "Expansion"
-      ],
-      [
-        "Expansion",
-        "Rip"
-      ],
-      [
-        "Life Cycle of the Universe",
-        "Heat Death"
-      ],
-      [
-        "Astronomy",
-        "Physical Makeup of the Universe"
-      ],
-      [
-        "Physical Makeup of the Universe",
-        "Matter"
-      ],
-      [
-        "Matter",
-        "Dark Matter"
-      ],
-      [
-        "Matter",
-        "Antimatter"
-      ],
-      [
-        "Black Holes",
-        "Hawking Radiation"
-      ],
-      [
-        "Black Holes",
-        "Singularity"
-      ],
-      [
-        "Black Holes",
-        "Quasars"
-      ],
-      [
-        "Galaxies",
-        "Spiral"
-      ],
-      [
-        "Galaxies",
-        "Elliptical"
-      ],
-      [
-        "Nebulae",
-        "Absorption"
-      ],
-      [
-        "Nebulae",
-        "Emission"
-      ],
-      [
-        "Nebulae",
-        "Reflection"
-      ],
-      [
-        "Nebulae",
-        "Planetary"
-      ],
-      [
-        "Planetary",
-        "Supernovae"
-      ],
-      [
-        "Supernovae",
-        "Stars"
-      ],
-      [
-        "Physical Makeup of the Universe",
-        "Energy"
-      ],
-      [
-        "Energy",
-        "Dark Energy"
-      ],
-      [
-        "Energy",
-        "Light"
-      ],
-      [
-        "Light",
-        "Light Pollution"
-      ],
-      [
-        "Stars",
-        "Boson"
-      ],
-      [
-        "Stars",
-        "Neutrons"
-      ],
-      [
-        "Stars",
-        "Pulsars"
-      ],
-      [
-        "Stars",
-        "Planetary"
-      ],
-      [
-        "Stars",
-        "HR Diagrams"
-      ]
+      ["Astronomy", "History"],
+      ["History", "Johannes Kepler"],
+      ["History", "Edwin Hubble"],
+      ["History", "Carl Sagan"],
+      ["History", "Albert Einstein"],
+      ["History", "Galileo"],
+      ["History", "Ancient Greece"],
+      ["Ancient Greece", "Ptolemy"],
+      ["Ancient Greece", "Hipparchus"],
+      ["Ancient Greece", "Constellations"],
+      ["Constellations", "Stars"],
+      ["History", "Ancient Mesopotamia"],
+      ["Ancient Mesopotamia", "Constellations"],
+      ["Ancient Greece", "Ancient Mesopotamia"],
+      ["Albert Einstein", "Relativity"],
+      ["Albert Einstein", "Black Holes"],
+      ["Albert Einstein", "Wormholes"],
+      ["Carl Sagan", "Cosmos"],
+      ["Media", "Cosmos"],
+      ["Media", "Interstellar"],
+      ["Media", "Contact"],
+      ["Media", "Gravity"],
+      ["Media", "The Martian"],
+      ["Astronomy", "Media"],
+      ["Carl Sagan", "Contact"],
+      ["Hubble", "Doppler Shift"],
+      ["Astronomical Observation", "Doppler Shift"],
+      ["Astronomical Observation", "Spectroscopy"],
+      ["Astronomical Observation", "Telescopes"],
+      ["Astronomy", "Astronomical Observation"],
+      ["Telescopes", "Dobsonian"],
+      ["Telescopes", "Gamma"],
+      ["Telescopes", "UV"],
+      ["Telescopes", "Radio"],
+      ["Telescopes", "Optic"],
+      ["Telescopes", "Kepler"],
+      ["Telescopes", "Galileo"],
+      ["Telescopes", "Observatories"],
+      ["Observatories", "LIGO"],
+      ["Observatories", "Gemini N/S"],
+      ["Observatories", "Pine Mountain Observatory"],
+      ["Telescopes", "Microwave"],
+      ["Telescopes", "Reflectors"],
+      ["Telescopes", "Refractors"],
+      ["Astronomical Observation", "Parallax"],
+      ["Telescopes", "Hubble"],
+      ["Telescopes", "JWST"],
+      ["Astronomical Observation", "Satellites"],
+      ["Satellites", "Hubble"],
+      ["Satellites", "JWST"],
+      ["Satellites", "Kepler"],
+      ["Satellites", "Cassini"],
+      ["Satellites", "Parker Solar Probe"],
+      ["Satellites", "Voyager 1 & 2"],
+      ["Astronomy", "Things in Space"],
+      ["Things in Space", "Wormholes"],
+      ["Things in Space", "Planets"],
+      ["Things in Space", "Moons"],
+      ["Things in Space", "Stars"],
+      ["Things in Space", "Supernovae"],
+      ["Things in Space", "Nebulae"],
+      ["Things in Space", "Galaxies"],
+      ["Things in Space", "Asteroids"],
+      ["Things in Space", "Black Holes"],
+      ["Things in Space", "Comets"],
+      ["Stars", "Black Holes"],
+      ["Things in Space", "Cosmic Microwave Background"],
+      ["Cosmic Microwave Background", "Big Bang"],
+      ["Big Bang", "Life Cycle of the Universe"],
+      ["Astronomy", "Life Cycle of the Universe"],
+      ["Life Cycle of the Universe", "Expansion"],
+      ["Expansion", "Rip"],
+      ["Life Cycle of the Universe", "Heat Death"],
+      ["Astronomy", "Physical Makeup of the Universe"],
+      ["Physical Makeup of the Universe", "Matter"],
+      ["Matter", "Dark Matter"],
+      ["Matter", "Antimatter"],
+      ["Black Holes", "Hawking Radiation"],
+      ["Black Holes", "Singularity"],
+      ["Black Holes", "Quasars"],
+      ["Galaxies", "Spiral"],
+      ["Galaxies", "Elliptical"],
+      ["Nebulae", "Absorption"],
+      ["Nebulae", "Emission"],
+      ["Nebulae", "Reflection"],
+      ["Nebulae", "Planetary"],
+      ["Planetary", "Supernovae"],
+      ["Supernovae", "Stars"],
+      ["Physical Makeup of the Universe", "Energy"],
+      ["Energy", "Dark Energy"],
+      ["Energy", "Light"],
+      ["Light", "Light Pollution"],
+      ["Stars", "Boson"],
+      ["Stars", "Neutrons"],
+      ["Stars", "Pulsars"],
+      ["Stars", "Planetary"],
+      ["Stars", "HR Diagrams"]
     ]
   },
   {
@@ -879,210 +389,57 @@
       "More Women in STEM"
     ],
     "connections": [
-      [
-        "Astronomy",
-        "The Moon Landing"
-      ],
-      [
-        "Astronomy",
-        "Observable Universe"
-      ],
-      [
-        "Astronomy",
-        "Atlas"
-      ],
-      [
-        "Astronomy",
-        "Neil DeGrasse Tyson"
-      ],
-      [
-        "Astronomy",
-        "Observatories"
-      ],
-      [
-        "Astronomy",
-        "Astrophysics"
-      ],
-      [
-        "Neil DeGrasse Tyson",
-        "Alan Lightman"
-      ],
-      [
-        "Alan Lightman",
-        "Albert Einstein"
-      ],
-      [
-        "Albert Einstein",
-        "Stephen Hawking"
-      ],
-      [
-        "Stephen Hawking",
-        "Spacetime"
-      ],
-      [
-        "Spacetime",
-        "Flat"
-      ],
-      [
-        "Flat",
-        "Universe Shape"
-      ],
-      [
-        "Universe Shape",
-        "Fabric of Reality"
-      ],
-      [
-        "Fabric of Reality",
-        "4D"
-      ],
-      [
-        "4D",
-        "Time"
-      ],
-      [
-        "Time",
-        "4D Beings"
-      ],
-      [
-        "4D Beings",
-        "Interstellar"
-      ],
-      [
-        "The Moon Landing",
-        "Voyager"
-      ],
-      [
-        "Voyager",
-        "Hubble"
-      ],
-      [
-        "Astrophysics",
-        "Physics"
-      ],
-      [
-        "Physics",
-        "Nuclear Physics"
-      ],
-      [
-        "Observatories",
-        "James Webb"
-      ],
-      [
-        "James Webb",
-        "BMO"
-      ],
-      [
-        "BMO",
-        "Son River Observatory"
-      ],
-      [
-        "Son River Observatory",
-        "Night Sky"
-      ],
-      [
-        "Night Sky",
-        "Meteors"
-      ],
-      [
-        "Observatories",
-        "Stars"
-      ],
-      [
-        "Stars",
-        "Constellations"
-      ],
-      [
-        "Constellations",
-        "Orion"
-      ],
-      [
-        "Constellations",
-        "Cygnus"
-      ],
-      [
-        "Constellations",
-        "Astrology"
-      ],
-      [
-        "Stars",
-        "Nebulas"
-      ],
-      [
-        "Stars",
-        "Pleiades"
-      ],
-      [
-        "Stars",
-        "Magnitude"
-      ],
-      [
-        "Astrophysics",
-        "Physics"
-      ],
-      [
-        "Physics",
-        "Nuclear Physics"
-      ],
-      [
-        "Nuclear Physics",
-        "Nuclear Fusion"
-      ],
-      [
-        "Nuclear Physics",
-        "Nuclear Fission"
-      ],
-      [
-        "Physics",
-        "Physics as a Job"
-      ],
-      [
-        "Physics as a Job",
-        "Need for Change in Economic Systems"
-      ],
-      [
-        "The Moon Landing",
-        "Moon Landing Deniers"
-      ],
-      [
-        "Particles",
-        "Quarks"
-      ],
-      [
-        "Particles",
-        "Leptons"
-      ],
-      [
-        "Particles",
-        "Neutrons"
-      ],
-      [
-        "Particles",
-        "Nuclear Physics"
-      ],
-      [
-        "The Sun",
-        "Stars"
-      ],
-      [
-        "The Sun",
-        "Heat Death"
-      ],
-      [
-        "Need for More Outreach",
-        "Moon Landing Deniers"
-      ],
-      [
-        "Need for More Outreach",
-        "Need for Change in Economic Systems"
-      ],
-      [
-        "More Women in STEM",
-        "Need for More Outreach"
-      ],
-      [
-        "More Women in STEM",
-        "Need for Change in Economic Systems"
-      ]
+      ["Astronomy", "The Moon Landing"],
+      ["Astronomy", "Observable Universe"],
+      ["Astronomy", "Atlas"],
+      ["Astronomy", "Neil DeGrasse Tyson"],
+      ["Astronomy", "Observatories"],
+      ["Astronomy", "Astrophysics"],
+      ["Neil DeGrasse Tyson", "Alan Lightman"],
+      ["Alan Lightman", "Albert Einstein"],
+      ["Albert Einstein", "Stephen Hawking"],
+      ["Stephen Hawking", "Spacetime"],
+      ["Spacetime", "Flat"],
+      ["Flat", "Universe Shape"],
+      ["Universe Shape", "Fabric of Reality"],
+      ["Fabric of Reality", "4D"],
+      ["4D", "Time"],
+      ["Time", "4D Beings"],
+      ["4D Beings", "Interstellar"],
+      ["The Moon Landing", "Voyager"],
+      ["Voyager", "Hubble"],
+      ["Astrophysics", "Physics"],
+      ["Physics", "Nuclear Physics"],
+      ["Observatories", "James Webb"],
+      ["James Webb", "BMO"],
+      ["BMO", "Son River Observatory"],
+      ["Son River Observatory", "Night Sky"],
+      ["Night Sky", "Meteors"],
+      ["Observatories", "Stars"],
+      ["Stars", "Constellations"],
+      ["Constellations", "Orion"],
+      ["Constellations", "Cygnus"],
+      ["Constellations", "Astrology"],
+      ["Stars", "Nebulas"],
+      ["Stars", "Pleiades"],
+      ["Stars", "Magnitude"],
+      ["Astrophysics", "Physics"],
+      ["Physics", "Nuclear Physics"],
+      ["Nuclear Physics", "Nuclear Fusion"],
+      ["Nuclear Physics", "Nuclear Fission"],
+      ["Physics", "Physics as a Job"],
+      ["Physics as a Job", "Need for Change in Economic Systems"],
+      ["The Moon Landing", "Moon Landing Deniers"],
+      ["Particles", "Quarks"],
+      ["Particles", "Leptons"],
+      ["Particles", "Neutrons"],
+      ["Particles", "Nuclear Physics"],
+      ["The Sun", "Stars"],
+      ["The Sun", "Heat Death"],
+      ["Need for More Outreach", "Moon Landing Deniers"],
+      ["Need for More Outreach", "Need for Change in Economic Systems"],
+      ["More Women in STEM", "Need for More Outreach"],
+      ["More Women in STEM", "Need for Change in Economic Systems"]
     ]
   },
   {
@@ -1163,362 +520,95 @@
       "Metal"
     ],
     "connections": [
-      [
-        "Astronomy",
-        "Stars"
-      ],
-      [
-        "Stars",
-        "Constellations"
-      ],
-      [
-        "Stars",
-        "Nuclear Fusion"
-      ],
-      [
-        "Nuclear Fusion",
-        "Hydrogen"
-      ],
-      [
-        "Nuclear Fusion",
-        "Helium"
-      ],
-      [
-        "Stars",
-        "Star Clusters"
-      ],
-      [
-        "Star Clusters",
-        "Nebulae"
-      ],
-      [
-        "Nebulae",
-        "Gas Clouds"
-      ],
-      [
-        "Stars",
-        "Supernovae"
-      ],
-      [
-        "Supernovae",
-        "Gas Clouds"
-      ],
-      [
-        "Supernovae",
-        "White Dwarf"
-      ],
-      [
-        "White Dwarf",
-        "Neutron Star"
-      ],
-      [
-        "Astronomy",
-        "Pine Mountain Observatory"
-      ],
-      [
-        "Pine Mountain Observatory",
-        "Trees"
-      ],
-      [
-        "Trees",
-        "Forest"
-      ],
-      [
-        "Pine Mountain Observatory",
-        "Telescopes"
-      ],
-      [
-        "Telescopes",
-        "Mirrors"
-      ],
-      [
-        "Astronomy",
-        "Physics"
-      ],
-      [
-        "Physics",
-        "Energy"
-      ],
-      [
-        "Energy",
-        "Potential Energy"
-      ],
-      [
-        "Energy",
-        "Kinetic Energy"
-      ],
-      [
-        "Energy",
-        "Conservation of Energy"
-      ],
-      [
-        "Potential Energy",
-        "Conservation of Energy"
-      ],
-      [
-        "Kinetic Energy",
-        "Conservation of Energy"
-      ],
-      [
-        "Physics",
-        "Kinematics"
-      ],
-      [
-        "Physics",
-        "Orbital Mechanics"
-      ],
-      [
-        "Orbital Mechanics",
-        "Binary Star System"
-      ],
-      [
-        "Orbital Mechanics",
-        "Triple Star System"
-      ],
-      [
-        "Orbital Mechanics",
-        "Gravity"
-      ],
-      [
-        "Gravity",
-        "Gravitational Constant"
-      ],
-      [
-        "Physics",
-        "Quantum Physics"
-      ],
-      [
-        "Quantum Physics",
-        "Quantum Computers"
-      ],
-      [
-        "Quantum Physics",
-        "Quantum Tunneling"
-      ],
-      [
-        "Quantum Physics",
-        "What the Hell"
-      ],
-      [
-        "Physics",
-        "Gets Weird"
-      ],
-      [
-        "Gets Weird",
-        "Quantum Physics"
-      ],
-      [
-        "Astronomy",
-        "Galaxies"
-      ],
-      [
-        "Galaxies",
-        "Black Holes"
-      ],
-      [
-        "Black Holes",
-        "White Holes???"
-      ],
-      [
-        "Black Holes",
-        "Supermassive Black Holes"
-      ],
-      [
-        "Supermassive Black Holes",
-        "Singularity"
-      ],
-      [
-        "Singularity",
-        "Infinity"
-      ],
-      [
-        "Infinity",
-        "Infinity + 1"
-      ],
-      [
-        "Infinity",
-        "Physics"
-      ],
-      [
-        "Infinity",
-        "Gets Weird"
-      ],
-      [
-        "Quantom Physics",
-        "What is Random"
-      ],
-      [
-        "What is Random",
-        "Completely Undetectable"
-      ],
-      [
-        "Quantum Physics",
-        "Things get so Small like WTF we can't see it"
-      ],
-      [
-        "Astronomy",
-        "The Moon"
-      ],
-      [
-        "The Moon",
-        "Earth"
-      ],
-      [
-        "Stars",
-        "The Sun"
-      ],
-      [
-        "The Sun",
-        "Earth"
-      ],
-      [
-        "The Sun",
-        "Mars"
-      ],
-      [
-        "The Sun",
-        "Venus"
-      ],
-      [
-        "The Sun",
-        "Mercury"
-      ],
-      [
-        "The Sun",
-        "Uranus"
-      ],
-      [
-        "The Sun",
-        "Neptune"
-      ],
-      [
-        "The Sun",
-        "Jupiter"
-      ],
-      [
-        "The Moon",
-        "Planets"
-      ],
-      [
-        "Planets",
-        "Mercury"
-      ],
-      [
-        "Planets",
-        "Venus"
-      ],
-      [
-        "Planets",
-        "Earth"
-      ],
-      [
-        "Planets",
-        "Mars"
-      ],
-      [
-        "Planets",
-        "Jupiter"
-      ],
-      [
-        "Planets",
-        "Saturn"
-      ],
-      [
-        "Planets",
-        "Uranus"
-      ],
-      [
-        "Planets",
-        "Neptune"
-      ],
-      [
-        "Planets",
-        "Exoplanets"
-      ],
-      [
-        "Planets",
-        "Life"
-      ],
-      [
-        "Life",
-        "Water"
-      ],
-      [
-        "Life",
-        "Single Celled Organisms"
-      ],
-      [
-        "Single Celled Organisms",
-        "Multi Celled Organisms"
-      ],
-      [
-        "Multi Celled Organisms",
-        "Fungi"
-      ],
-      [
-        "Multi Celled Organisms",
-        "Plants"
-      ],
-      [
-        "Multi Celled Organisms",
-        "Animals"
-      ],
-      [
-        "Animals",
-        "Intelligence"
-      ],
-      [
-        "Intelligence",
-        "Aliens"
-      ],
-      [
-        "Astronomy",
-        "Computers"
-      ],
-      [
-        "Computers",
-        "robots"
-      ],
-      [
-        "Computers",
-        "Coding"
-      ],
-      [
-        "Coding",
-        "Programs"
-      ],
-      [
-        "Programs",
-        "Simulations"
-      ],
-      [
-        "Simulations",
-        "Orbital Mechanics"
-      ],
-      [
-        "Simulations",
-        "Binary Star System"
-      ],
-      [
-        "Simulations",
-        "Triple Star System"
-      ],
-      [
-        "Programs",
-        "Math"
-      ],
-      [
-        "Programs",
-        "Algorithms"
-      ],
-      [
-        "Computers",
-        "Metal"
-      ],
-      [
-        "Quantum Computers",
-        "Computers"
-      ]
+      ["Astronomy", "Stars"],
+      ["Stars", "Constellations"],
+      ["Stars", "Nuclear Fusion"],
+      ["Nuclear Fusion", "Hydrogen"],
+      ["Nuclear Fusion", "Helium"],
+      ["Stars", "Star Clusters"],
+      ["Star Clusters", "Nebulae"],
+      ["Nebulae", "Gas Clouds"],
+      ["Stars", "Supernovae"],
+      ["Supernovae", "Gas Clouds"],
+      ["Supernovae", "White Dwarf"],
+      ["White Dwarf", "Neutron Star"],
+      ["Astronomy", "Pine Mountain Observatory"],
+      ["Pine Mountain Observatory", "Trees"],
+      ["Trees", "Forest"],
+      ["Pine Mountain Observatory", "Telescopes"],
+      ["Telescopes", "Mirrors"],
+      ["Astronomy", "Physics"],
+      ["Physics", "Energy"],
+      ["Energy", "Potential Energy"],
+      ["Energy", "Kinetic Energy"],
+      ["Energy", "Conservation of Energy"],
+      ["Potential Energy", "Conservation of Energy"],
+      ["Kinetic Energy", "Conservation of Energy"],
+      ["Physics", "Kinematics"],
+      ["Physics", "Orbital Mechanics"],
+      ["Orbital Mechanics", "Binary Star System"],
+      ["Orbital Mechanics", "Triple Star System"],
+      ["Orbital Mechanics", "Gravity"],
+      ["Gravity", "Gravitational Constant"],
+      ["Physics", "Quantum Physics"],
+      ["Quantum Physics", "Quantum Computers"],
+      ["Quantum Physics", "Quantum Tunneling"],
+      ["Quantum Physics", "What the Hell"],
+      ["Physics", "Gets Weird"],
+      ["Gets Weird", "Quantum Physics"],
+      ["Astronomy", "Galaxies"],
+      ["Galaxies", "Black Holes"],
+      ["Black Holes", "White Holes???"],
+      ["Black Holes", "Supermassive Black Holes"],
+      ["Supermassive Black Holes", "Singularity"],
+      ["Singularity", "Infinity"],
+      ["Infinity", "Infinity + 1"],
+      ["Infinity", "Physics"],
+      ["Infinity", "Gets Weird"],
+      ["Quantom Physics", "What is Random"],
+      ["What is Random", "Completely Undetectable"],
+      ["Quantum Physics", "Things get so Small like WTF we can't see it"],
+      ["Astronomy", "The Moon"],
+      ["The Moon", "Earth"],
+      ["Stars", "The Sun"],
+      ["The Sun", "Earth"],
+      ["The Sun", "Mars"],
+      ["The Sun", "Venus"],
+      ["The Sun", "Mercury"],
+      ["The Sun", "Uranus"],
+      ["The Sun", "Neptune"],
+      ["The Sun", "Jupiter"],
+      ["The Moon", "Planets"],
+      ["Planets", "Mercury"],
+      ["Planets", "Venus"],
+      ["Planets", "Earth"],
+      ["Planets", "Mars"],
+      ["Planets", "Jupiter"],
+      ["Planets", "Saturn"],
+      ["Planets", "Uranus"],
+      ["Planets", "Neptune"],
+      ["Planets", "Exoplanets"],
+      ["Planets", "Life"],
+      ["Life", "Water"],
+      ["Life", "Single Celled Organisms"],
+      ["Single Celled Organisms", "Multi Celled Organisms"],
+      ["Multi Celled Organisms", "Fungi"],
+      ["Multi Celled Organisms", "Plants"],
+      ["Multi Celled Organisms", "Animals"],
+      ["Animals", "Intelligence"],
+      ["Intelligence", "Aliens"],
+      ["Astronomy", "Computers"],
+      ["Computers", "robots"],
+      ["Computers", "Coding"],
+      ["Coding", "Programs"],
+      ["Programs", "Simulations"],
+      ["Simulations", "Orbital Mechanics"],
+      ["Simulations", "Binary Star System"],
+      ["Simulations", "Triple Star System"],
+      ["Programs", "Math"],
+      ["Programs", "Algorithms"],
+      ["Computers", "Metal"],
+      ["Quantum Computers", "Computers"]
     ]
   },
   {
@@ -1564,158 +654,47 @@
       "Saturn"
     ],
     "connections": [
-      [
-        "Astronomy",
-        "Cosmology"
-      ],
-      [
-        "Astronomy",
-        "Astrology"
-      ],
-      [
-        "Astrology",
-        "Mythology"
-      ],
-      [
-        "Astrology",
-        "Theology"
-      ],
-      [
-        "Astrology",
-        "Constellations"
-      ],
-      [
-        "Constellations",
-        "Cartography"
-      ],
-      [
-        "Cosmology",
-        "Anthropic Principle"
-      ],
-      [
-        "Cosmology",
-        "Drake Equation"
-      ],
-      [
-        "Anthropic Principle",
-        "Philosophy"
-      ],
-      [
-        "Philosophy",
-        "Albert Einstein"
-      ],
-      [
-        "Albert Einstein",
-        "Relativity"
-      ],
-      [
-        "Relativity",
-        "Galileo"
-      ],
-      [
-        "Relativity",
-        "Time Dilation"
-      ],
-      [
-        "Relativity",
-        "Gravity"
-      ],
-      [
-        "Drake Equation",
-        "Extraterrestrial Life"
-      ],
-      [
-        "Extraterrestrial Life",
-        "Creation of Life"
-      ],
-      [
-        "Creation of Life",
-        "Sweet Spot of Life"
-      ],
-      [
-        "Astronomy",
-        "Big Bang"
-      ],
-      [
-        "Big Bang",
-        "Noise"
-      ],
-      [
-        "Big Bang",
-        "Universe Expansion"
-      ],
-      [
-        "Universe Expansion",
-        "Noise"
-      ],
-      [
-        "Universe Expansion",
-        "Theory on the Shape of the Universe"
-      ],
-      [
-        "Albert Einstein",
-        "Light"
-      ],
-      [
-        "Light",
-        "Particles"
-      ],
-      [
-        "Particles",
-        "Dark Matter"
-      ],
-      [
-        "Particles",
-        "Nuclear Force"
-      ],
-      [
-        "Particles",
-        "Bosons"
-      ],
-      [
-        "Bosons",
-        "Neutrons"
-      ],
-      [
-        "Bosons",
-        "Protons"
-      ],
-      [
-        "Bosons",
-        "Degree Symmetry"
-      ],
-      [
-        "Degree Symmetry",
-        "String Theory"
-      ],
-      [
-        "String Theory",
-        "M Theory"
-      ],
+      ["Astronomy", "Cosmology"],
+      ["Astronomy", "Astrology"],
+      ["Astrology", "Mythology"],
+      ["Astrology", "Theology"],
+      ["Astrology", "Constellations"],
+      ["Constellations", "Cartography"],
+      ["Cosmology", "Anthropic Principle"],
+      ["Cosmology", "Drake Equation"],
+      ["Anthropic Principle", "Philosophy"],
+      ["Philosophy", "Albert Einstein"],
+      ["Albert Einstein", "Relativity"],
+      ["Relativity", "Galileo"],
+      ["Relativity", "Time Dilation"],
+      ["Relativity", "Gravity"],
+      ["Drake Equation", "Extraterrestrial Life"],
+      ["Extraterrestrial Life", "Creation of Life"],
+      ["Creation of Life", "Sweet Spot of Life"],
+      ["Astronomy", "Big Bang"],
+      ["Big Bang", "Noise"],
+      ["Big Bang", "Universe Expansion"],
+      ["Universe Expansion", "Noise"],
+      ["Universe Expansion", "Theory on the Shape of the Universe"],
+      ["Albert Einstein", "Light"],
+      ["Light", "Particles"],
+      ["Particles", "Dark Matter"],
+      ["Particles", "Nuclear Force"],
+      ["Particles", "Bosons"],
+      ["Bosons", "Neutrons"],
+      ["Bosons", "Protons"],
+      ["Bosons", "Degree Symmetry"],
+      ["Degree Symmetry", "String Theory"],
+      ["String Theory", "M Theory"],
       [
         "Creation of Life",
         "Large Gap Between Oldest Fossil and Inhability of Earth"
       ],
-      [
-        "Large Gap Between Oldest Fossil and Inhability of Earth",
-        "Titan"
-      ],
-      [
-        "Titan",
-        "Extraterrestrial Water"
-      ],
-      [
-        "Extraterrestrial Water",
-        "Europa"
-      ],
-      [
-        "Europa",
-        "Jupiter"
-      ],
-      [
-        "Titan",
-        "Saturn"
-      ]
+      ["Large Gap Between Oldest Fossil and Inhability of Earth", "Titan"],
+      ["Titan", "Extraterrestrial Water"],
+      ["Extraterrestrial Water", "Europa"],
+      ["Europa", "Jupiter"],
+      ["Titan", "Saturn"]
     ]
   },
   {
@@ -1763,162 +742,45 @@
       "Clockwise/Counterclockwise"
     ],
     "connections": [
-      [
-        "Astronomy",
-        "Doppler Shift"
-      ],
-      [
-        "Astronomy",
-        "Relativity"
-      ],
-      [
-        "Astronomy",
-        "Speed of Light"
-      ],
-      [
-        "Astronomy",
-        "Time Travel"
-      ],
-      [
-        "Astronomy",
-        "Time Dilation"
-      ],
-      [
-        "Astronomy",
-        "Dark Matter"
-      ],
-      [
-        "Astronomy",
-        "Antimatter"
-      ],
-      [
-        "Astronomy",
-        "Aliens"
-      ],
-      [
-        "Astronomy",
-        "Outer Wilds"
-      ],
-      [
-        "Astronomy",
-        "Supernovae"
-      ],
-      [
-        "Astronomy",
-        "Dark Energy"
-      ],
-      [
-        "Astronomy",
-        "Exoplanets"
-      ],
-      [
-        "Astronomy",
-        "Solar Systems"
-      ],
-      [
-        "Astronomy",
-        "Constellations"
-      ],
-      [
-        "Astronomy",
-        "Neutron Stars"
-      ],
-      [
-        "Astronomy",
-        "Moons"
-      ],
-      [
-        "Astronomy",
-        "Planets"
-      ],
-      [
-        "Astronomy",
-        "Stars"
-      ],
-      [
-        "Astronomy",
-        "Galaxies"
-      ],
-      [
-        "Astronomy",
-        "Galaxy Clusters"
-      ],
-      [
-        "Astronomy",
-        "Asteroids"
-      ],
-      [
-        "Astronomy",
-        "Craters"
-      ],
-      [
-        "Astronomy",
-        "Black Holes"
-      ],
-      [
-        "Astronomy",
-        "Universe"
-      ],
-      [
-        "Astronomy",
-        "Satellites"
-      ],
-      [
-        "Astronomy",
-        "Ellipses"
-      ],
-      [
-        "Astronomy",
-        "Observatories"
-      ],
-      [
-        "Astronomy",
-        "Telescopes"
-      ],
-      [
-        "Astronomy",
-        "White Dwarf"
-      ],
-      [
-        "Astronomy",
-        "Solar vs. Sidereal"
-      ],
-      [
-        "Astronomy",
-        "Parallax"
-      ],
-      [
-        "Astronomy",
-        "Rotations"
-      ],
-      [
-        "Astronomy",
-        "Photography"
-      ],
-      [
-        "Astronomy",
-        "Wavelengths"
-      ],
-      [
-        "Astronomy",
-        "Point of View"
-      ],
-      [
-        "Astronomy",
-        "Orbits"
-      ],
-      [
-        "Astronomy",
-        "Star Trails"
-      ],
-      [
-        "Astronomy",
-        "Latitude"
-      ],
-      [
-        "Astronomy",
-        "Clockwise/Counterclockwise"
-      ]
+      ["Astronomy", "Doppler Shift"],
+      ["Astronomy", "Relativity"],
+      ["Astronomy", "Speed of Light"],
+      ["Astronomy", "Time Travel"],
+      ["Astronomy", "Time Dilation"],
+      ["Astronomy", "Dark Matter"],
+      ["Astronomy", "Antimatter"],
+      ["Astronomy", "Aliens"],
+      ["Astronomy", "Outer Wilds"],
+      ["Astronomy", "Supernovae"],
+      ["Astronomy", "Dark Energy"],
+      ["Astronomy", "Exoplanets"],
+      ["Astronomy", "Solar Systems"],
+      ["Astronomy", "Constellations"],
+      ["Astronomy", "Neutron Stars"],
+      ["Astronomy", "Moons"],
+      ["Astronomy", "Planets"],
+      ["Astronomy", "Stars"],
+      ["Astronomy", "Galaxies"],
+      ["Astronomy", "Galaxy Clusters"],
+      ["Astronomy", "Asteroids"],
+      ["Astronomy", "Craters"],
+      ["Astronomy", "Black Holes"],
+      ["Astronomy", "Universe"],
+      ["Astronomy", "Satellites"],
+      ["Astronomy", "Ellipses"],
+      ["Astronomy", "Observatories"],
+      ["Astronomy", "Telescopes"],
+      ["Astronomy", "White Dwarf"],
+      ["Astronomy", "Solar vs. Sidereal"],
+      ["Astronomy", "Parallax"],
+      ["Astronomy", "Rotations"],
+      ["Astronomy", "Photography"],
+      ["Astronomy", "Wavelengths"],
+      ["Astronomy", "Point of View"],
+      ["Astronomy", "Orbits"],
+      ["Astronomy", "Star Trails"],
+      ["Astronomy", "Latitude"],
+      ["Astronomy", "Clockwise/Counterclockwise"]
     ]
   },
   {
@@ -1949,126 +811,36 @@
       "Hubble"
     ],
     "connections": [
-      [
-        "Astronomy",
-        "Gas Clouds"
-      ],
-      [
-        "Gas Clouds",
-        "Nebulae"
-      ],
-      [
-        "Nebulae",
-        "Astronomy"
-      ],
-      [
-        "Astronomy",
-        "Orbits"
-      ],
-      [
-        "Orbits",
-        "Geology"
-      ],
-      [
-        "Geology",
-        "Planets"
-      ],
-      [
-        "Astronomy",
-        "Stars"
-      ],
-      [
-        "Stars",
-        "Supernovae"
-      ],
-      [
-        "Stars",
-        "Pulsars"
-      ],
-      [
-        "Stars",
-        "Red Dwarf"
-      ],
-      [
-        "Stars",
-        "The Sun"
-      ],
-      [
-        "Planets",
-        "The Sun"
-      ],
-      [
-        "The Sun",
-        "Earth"
-      ],
-      [
-        "Astronomy",
-        "Planets"
-      ],
-      [
-        "Planets",
-        "Solar System"
-      ],
-      [
-        "Solar System",
-        "The Sun"
-      ],
-      [
-        "The Sun",
-        "Saturn"
-      ],
-      [
-        "Saturn",
-        "Planets"
-      ],
-      [
-        "Saturn",
-        "Europa"
-      ],
-      [
-        "Saturn",
-        "Titan"
-      ],
-      [
-        "Planets",
-        "Moons"
-      ],
-      [
-        "Europa",
-        "Moons"
-      ],
-      [
-        "Titan",
-        "Moons"
-      ],
-      [
-        "Europa",
-        "Europa Clipper"
-      ],
-      [
-        "Europa Clipper",
-        "Satellites"
-      ],
-      [
-        "Astronomy",
-        "Satellites"
-      ],
-      [
-        "Astronomy",
-        "Observatories"
-      ],
-      [
-        "Observatories",
-        "Pine Mountain Observatory"
-      ],
-      [
-        "Observatories",
-        "Gemini N/S"
-      ],
-      [
-        "Observatories",
-        "Hubble"
-      ]
+      ["Astronomy", "Gas Clouds"],
+      ["Gas Clouds", "Nebulae"],
+      ["Nebulae", "Astronomy"],
+      ["Astronomy", "Orbits"],
+      ["Orbits", "Geology"],
+      ["Geology", "Planets"],
+      ["Astronomy", "Stars"],
+      ["Stars", "Supernovae"],
+      ["Stars", "Pulsars"],
+      ["Stars", "Red Dwarf"],
+      ["Stars", "The Sun"],
+      ["Planets", "The Sun"],
+      ["The Sun", "Earth"],
+      ["Astronomy", "Planets"],
+      ["Planets", "Solar System"],
+      ["Solar System", "The Sun"],
+      ["The Sun", "Saturn"],
+      ["Saturn", "Planets"],
+      ["Saturn", "Europa"],
+      ["Saturn", "Titan"],
+      ["Planets", "Moons"],
+      ["Europa", "Moons"],
+      ["Titan", "Moons"],
+      ["Europa", "Europa Clipper"],
+      ["Europa Clipper", "Satellites"],
+      ["Astronomy", "Satellites"],
+      ["Astronomy", "Observatories"],
+      ["Observatories", "Pine Mountain Observatory"],
+      ["Observatories", "Gemini N/S"],
+      ["Observatories", "Hubble"]
     ]
   },
   {
@@ -2135,270 +907,72 @@
       "Project Hail Mary"
     ],
     "connections": [
-      [
-        "Astronomy",
-        "Constellations"
-      ],
-      [
-        "Constellations",
-        "Orion"
-      ],
-      [
-        "Constellations",
-        "Andromeda"
-      ],
-      [
-        "Constellations",
-        "Cepheus"
-      ],
-      [
-        "Constellations",
-        "Taurus"
-      ],
-      [
-        "Constellations",
-        "Lyra"
-      ],
-      [
-        "Orion",
-        "Rigel"
-      ],
-      [
-        "Orion",
-        "Betelgeuse"
-      ],
-      [
-        "Taurus",
-        "Aldebaran"
-      ],
-      [
-        "Lyra",
-        "Vega"
-      ],
-      [
-        "Astronomy",
-        "Black Holes"
-      ],
-      [
-        "Black Holes",
-        "Schwartzschild Radius"
-      ],
-      [
-        "Black Holes",
-        "Event Horizon"
-      ],
-      [
-        "Black Holes",
-        "Spaghettification"
-      ],
-      [
-        "Astronomy",
-        "Planets"
-      ],
-      [
-        "Planets",
-        "Mercury"
-      ],
-      [
-        "Planets",
-        "Venus"
-      ],
-      [
-        "Planets",
-        "Earth"
-      ],
-      [
-        "Planets",
-        "Mars"
-      ],
-      [
-        "Planets",
-        "Jupiter"
-      ],
-      [
-        "Planets",
-        "Saturn"
-      ],
-      [
-        "Planets",
-        "Uranus"
-      ],
-      [
-        "Planets",
-        "Neptune"
-      ],
-      [
-        "Planets",
-        "Planetesimals"
-      ],
-      [
-        "Planetesimals",
-        "Pluto"
-      ],
-      [
-        "Planetesimals",
-        "Ceres"
-      ],
-      [
-        "Earth",
-        "The Moon"
-      ],
-      [
-        "Jupiter",
-        "Great Red Spot"
-      ],
-      [
-        "Jupiter",
-        "Europa"
-      ],
-      [
-        "Europa",
-        "Presence of Water"
-      ],
-      [
-        "Saturn",
-        "Encelaedus"
-      ],
-      [
-        "Encelaedus",
-        "Presence of Water"
-      ],
-      [
-        "Saturn",
-        "Rings"
-      ],
-      [
-        "Jupiter",
-        "Rings"
-      ],
-      [
-        "Astronomy",
-        "Telescopes"
-      ],
-      [
-        "Telescopes",
-        "Filters"
-      ],
-      [
-        "Filters",
-        "H/S/O/R/G/B"
-      ],
-      [
-        "Telescopes",
-        "Lenses"
-      ],
-      [
-        "Telescopes",
-        "Mirrors"
-      ],
-      [
-        "Telescopes",
-        "Astrophotography"
-      ],
-      [
-        "Astronomy",
-        "Astrophotography"
-      ],
-      [
-        "Astrophotography",
-        "Cameras"
-      ],
-      [
-        "Astrophotography",
-        "Software"
-      ],
-      [
-        "Software",
-        "NINA"
-      ],
-      [
-        "Software",
-        "PHD2"
-      ],
-      [
-        "Software",
-        "PixInsight"
-      ],
-      [
-        "Software",
-        "ASCOM"
-      ],
-      [
-        "Software",
-        "Stellarium"
-      ],
-      [
-        "Astronomy",
-        "Objects"
-      ],
-      [
-        "Objects",
-        "Galaxies"
-      ],
-      [
-        "Galaxies",
-        "The Milky Way"
-      ],
-      [
-        "Objects",
-        "Black Holes"
-      ],
-      [
-        "Objects",
-        "Nebulae"
-      ],
-      [
-        "Objects",
-        "Quasars"
-      ],
-      [
-        "Objects",
-        "Stars"
-      ],
-      [
-        "Stars",
-        "Star Clusters"
-      ],
-      [
-        "Galaxies",
-        "Messier Catalog"
-      ],
-      [
-        "Galaxies",
-        "Andromeda"
-      ],
-      [
-        "Astronomy",
-        "Media"
-      ],
-      [
-        "Media",
-        "The Martian"
-      ],
-      [
-        "The Martian",
-        "Mars"
-      ],
-      [
-        "Media",
-        "Contact"
-      ],
-      [
-        "Contact",
-        "Vega"
-      ],
-      [
-        "Media",
-        "Interstellar"
-      ],
-      [
-        "Interstellar",
-        "Black Holes"
-      ],
-      [
-        "Media",
-        "Project Hail Mary"
-      ]
+      ["Astronomy", "Constellations"],
+      ["Constellations", "Orion"],
+      ["Constellations", "Andromeda"],
+      ["Constellations", "Cepheus"],
+      ["Constellations", "Taurus"],
+      ["Constellations", "Lyra"],
+      ["Orion", "Rigel"],
+      ["Orion", "Betelgeuse"],
+      ["Taurus", "Aldebaran"],
+      ["Lyra", "Vega"],
+      ["Astronomy", "Black Holes"],
+      ["Black Holes", "Schwartzschild Radius"],
+      ["Black Holes", "Event Horizon"],
+      ["Black Holes", "Spaghettification"],
+      ["Astronomy", "Planets"],
+      ["Planets", "Mercury"],
+      ["Planets", "Venus"],
+      ["Planets", "Earth"],
+      ["Planets", "Mars"],
+      ["Planets", "Jupiter"],
+      ["Planets", "Saturn"],
+      ["Planets", "Uranus"],
+      ["Planets", "Neptune"],
+      ["Planets", "Planetesimals"],
+      ["Planetesimals", "Pluto"],
+      ["Planetesimals", "Ceres"],
+      ["Earth", "The Moon"],
+      ["Jupiter", "Great Red Spot"],
+      ["Jupiter", "Europa"],
+      ["Europa", "Presence of Water"],
+      ["Saturn", "Encelaedus"],
+      ["Encelaedus", "Presence of Water"],
+      ["Saturn", "Rings"],
+      ["Jupiter", "Rings"],
+      ["Astronomy", "Telescopes"],
+      ["Telescopes", "Filters"],
+      ["Filters", "H/S/O/R/G/B"],
+      ["Telescopes", "Lenses"],
+      ["Telescopes", "Mirrors"],
+      ["Telescopes", "Astrophotography"],
+      ["Astronomy", "Astrophotography"],
+      ["Astrophotography", "Cameras"],
+      ["Astrophotography", "Software"],
+      ["Software", "NINA"],
+      ["Software", "PHD2"],
+      ["Software", "PixInsight"],
+      ["Software", "ASCOM"],
+      ["Software", "Stellarium"],
+      ["Astronomy", "Objects"],
+      ["Objects", "Galaxies"],
+      ["Galaxies", "The Milky Way"],
+      ["Objects", "Black Holes"],
+      ["Objects", "Nebulae"],
+      ["Objects", "Quasars"],
+      ["Objects", "Stars"],
+      ["Stars", "Star Clusters"],
+      ["Galaxies", "Messier Catalog"],
+      ["Galaxies", "Andromeda"],
+      ["Astronomy", "Media"],
+      ["Media", "The Martian"],
+      ["The Martian", "Mars"],
+      ["Media", "Contact"],
+      ["Contact", "Vega"],
+      ["Media", "Interstellar"],
+      ["Interstellar", "Black Holes"],
+      ["Media", "Project Hail Mary"]
     ]
   },
   {
@@ -2441,142 +1015,40 @@
       "Cameras"
     ],
     "connections": [
-      [
-        "Astronomy",
-        "Telescopes"
-      ],
-      [
-        "Telescopes",
-        "Eyepieces"
-      ],
-      [
-        "Telescopes",
-        "Mirrors"
-      ],
-      [
-        "Mirrors",
-        "Collimation"
-      ],
-      [
-        "Astronomy",
-        "Observatories"
-      ],
-      [
-        "Observatories",
-        "Pine Mountain Observatory"
-      ],
-      [
-        "Observatories",
-        "Gemini N/S"
-      ],
-      [
-        "Astronomy",
-        "Stars"
-      ],
-      [
-        "Stars",
-        "Galaxies"
-      ],
-      [
-        "Galaxies",
-        "Milky Way"
-      ],
-      [
-        "Milky Way",
-        "Andromeda"
-      ],
-      [
-        "Stars",
-        "Neutron Stars"
-      ],
-      [
-        "Neutron Stars",
-        "Supernovae"
-      ],
-      [
-        "Stars",
-        "Constellations"
-      ],
-      [
-        "Astronomy",
-        "Planets"
-      ],
-      [
-        "Planets",
-        "Habitability"
-      ],
-      [
-        "Habitability",
-        "Atmosphere"
-      ],
-      [
-        "Habitability",
-        "Life"
-      ],
-      [
-        "Habitability",
-        "Water"
-      ],
-      [
-        "Planets",
-        "Solar System"
-      ],
-      [
-        "Planets",
-        "Moons"
-      ],
-      [
-        "Moons",
-        "Europa"
-      ],
-      [
-        "Astronomy",
-        "Deep Space Objects"
-      ],
-      [
-        "Deep Space Objects",
-        "Nebulae"
-      ],
-      [
-        "Nebulae",
-        "Orion"
-      ],
-      [
-        "Nebulae",
-        "Star Cluster"
-      ],
-      [
-        "Deep Space Objects",
-        "Black Holes"
-      ],
-      [
-        "Black Holes",
-        "Singularity"
-      ],
-      [
-        "Black Holes",
-        "Gravity"
-      ],
-      [
-        "Black Holes",
-        "Mass"
-      ],
-      [
-        "Astronomy",
-        "Astrophotography"
-      ],
-      [
-        "Astrophotography",
-        "Hubble"
-      ],
-      [
-        "Astrophotography",
-        "Exposure"
-      ],
-      [
-        "Astrophotography",
-        "Cameras"
-      ]
+      ["Astronomy", "Telescopes"],
+      ["Telescopes", "Eyepieces"],
+      ["Telescopes", "Mirrors"],
+      ["Mirrors", "Collimation"],
+      ["Astronomy", "Observatories"],
+      ["Observatories", "Pine Mountain Observatory"],
+      ["Observatories", "Gemini N/S"],
+      ["Astronomy", "Stars"],
+      ["Stars", "Galaxies"],
+      ["Galaxies", "Milky Way"],
+      ["Milky Way", "Andromeda"],
+      ["Stars", "Neutron Stars"],
+      ["Neutron Stars", "Supernovae"],
+      ["Stars", "Constellations"],
+      ["Astronomy", "Planets"],
+      ["Planets", "Habitability"],
+      ["Habitability", "Atmosphere"],
+      ["Habitability", "Life"],
+      ["Habitability", "Water"],
+      ["Planets", "Solar System"],
+      ["Planets", "Moons"],
+      ["Moons", "Europa"],
+      ["Astronomy", "Deep Space Objects"],
+      ["Deep Space Objects", "Nebulae"],
+      ["Nebulae", "Orion"],
+      ["Nebulae", "Star Cluster"],
+      ["Deep Space Objects", "Black Holes"],
+      ["Black Holes", "Singularity"],
+      ["Black Holes", "Gravity"],
+      ["Black Holes", "Mass"],
+      ["Astronomy", "Astrophotography"],
+      ["Astrophotography", "Hubble"],
+      ["Astrophotography", "Exposure"],
+      ["Astrophotography", "Cameras"]
     ]
   },
   {
@@ -2637,218 +1109,59 @@
       "Gravitational Waves"
     ],
     "connections": [
-      [
-        "Astronomy",
-        "Nebulae"
-      ],
-      [
-        "Nebulae",
-        "Crab Nebula"
-      ],
-      [
-        "Astronomy",
-        "Stars"
-      ],
-      [
-        "Stars",
-        "Cepheid Variables"
-      ],
-      [
-        "Cepheid Variables",
-        "Oscillating Luminosity"
-      ],
-      [
-        "Astronomy",
-        "Dead Stars"
-      ],
-      [
-        "Dead Stars",
-        "Neutron Stars"
-      ],
-      [
-        "Neutron Stars",
-        "Pulsars"
-      ],
-      [
-        "Dead Stars",
-        "Black Holes"
-      ],
-      [
-        "Black Holes",
-        "Hawking Radiation"
-      ],
-      [
-        "Hawking Radiation",
-        "Black Hole Evaporation"
-      ],
-      [
-        "Black Holes",
-        "Supermassive Black Holes"
-      ],
-      [
-        "Supermassive Black Holes",
-        "Accretion Disk"
-      ],
-      [
-        "Supermassive Black Holes",
-        "Quasars"
-      ],
-      [
-        "Astronomy",
-        "Galaxies"
-      ],
-      [
-        "Galaxies",
-        "Quasars"
-      ],
-      [
-        "Galaxies",
-        "Canis Major Dwarf Galaxy"
-      ],
-      [
-        "Canis Major Dwarf Galaxy",
-        "Satellite Galaxy"
-      ],
-      [
-        "Galaxies",
-        "Irregular Galaxies"
-      ],
-      [
-        "Irregular Galaxies",
-        "Antennae Galaxies"
-      ],
-      [
-        "Galaxies",
-        "Spiral Galaxies"
-      ],
-      [
-        "Spiral Galaxies",
-        "Milky Way"
-      ],
-      [
-        "Spiral Galaxies",
-        "Andromeda"
-      ],
-      [
-        "Astronomy",
-        "Dark Matter"
-      ],
-      [
-        "Dark Matter",
-        "Expansion of Space"
-      ],
-      [
-        "Astronomy",
-        "Cosmic Microwave Background"
-      ],
-      [
-        "Astronomy",
-        "Solar System"
-      ],
-      [
-        "Solar System",
-        "The Sun"
-      ],
-      [
-        "The Sun",
-        "Nuclear Fusion"
-      ],
-      [
-        "Solar System",
-        "Mars"
-      ],
-      [
-        "Mars",
-        "Olympus Mons"
-      ],
-      [
-        "Solar System",
-        "Oort Cloud"
-      ],
-      [
-        "Astronomy",
-        "Constellations"
-      ],
-      [
-        "Constellations",
-        "Asterisms"
-      ],
-      [
-        "Asterisms",
-        "The Big Dipper"
-      ],
-      [
-        "Asterisms",
-        "Summer Triangle"
-      ],
-      [
-        "Summer Triangle",
-        "Deneb"
-      ],
-      [
-        "Summer Triangle",
-        "Vega"
-      ],
-      [
-        "Summer Triangle",
-        "Altair"
-      ],
-      [
-        "Astronomy",
-        "Instruments"
-      ],
-      [
-        "Instruments",
-        "Observatories"
-      ],
-      [
-        "Observatories",
-        "Gemini N/S"
-      ],
-      [
-        "Gemini N/S",
-        "27 Foot Mirror"
-      ],
-      [
-        "Instruments",
-        "Rovers"
-      ],
-      [
-        "Rovers",
-        "Spirit"
-      ],
-      [
-        "Rovers",
-        "Curiosity"
-      ],
-      [
-        "Rovers",
-        "Opportunity"
-      ],
-      [
-        "Rovers",
-        "Sojourner"
-      ],
-      [
-        "Instruments",
-        "Probes"
-      ],
-      [
-        "Probes",
-        "Voyager 1/2"
-      ],
-      [
-        "Voyager 1/2",
-        "Golden Record"
-      ],
-      [
-        "Instruments",
-        "LIGO"
-      ],
-      [
-        "LIGO",
-        "Gravitational Waves"
-      ]
+      ["Astronomy", "Nebulae"],
+      ["Nebulae", "Crab Nebula"],
+      ["Astronomy", "Stars"],
+      ["Stars", "Cepheid Variables"],
+      ["Cepheid Variables", "Oscillating Luminosity"],
+      ["Astronomy", "Dead Stars"],
+      ["Dead Stars", "Neutron Stars"],
+      ["Neutron Stars", "Pulsars"],
+      ["Dead Stars", "Black Holes"],
+      ["Black Holes", "Hawking Radiation"],
+      ["Hawking Radiation", "Black Hole Evaporation"],
+      ["Black Holes", "Supermassive Black Holes"],
+      ["Supermassive Black Holes", "Accretion Disk"],
+      ["Supermassive Black Holes", "Quasars"],
+      ["Astronomy", "Galaxies"],
+      ["Galaxies", "Quasars"],
+      ["Galaxies", "Canis Major Dwarf Galaxy"],
+      ["Canis Major Dwarf Galaxy", "Satellite Galaxy"],
+      ["Galaxies", "Irregular Galaxies"],
+      ["Irregular Galaxies", "Antennae Galaxies"],
+      ["Galaxies", "Spiral Galaxies"],
+      ["Spiral Galaxies", "Milky Way"],
+      ["Spiral Galaxies", "Andromeda"],
+      ["Astronomy", "Dark Matter"],
+      ["Dark Matter", "Expansion of Space"],
+      ["Astronomy", "Cosmic Microwave Background"],
+      ["Astronomy", "Solar System"],
+      ["Solar System", "The Sun"],
+      ["The Sun", "Nuclear Fusion"],
+      ["Solar System", "Mars"],
+      ["Mars", "Olympus Mons"],
+      ["Solar System", "Oort Cloud"],
+      ["Astronomy", "Constellations"],
+      ["Constellations", "Asterisms"],
+      ["Asterisms", "The Big Dipper"],
+      ["Asterisms", "Summer Triangle"],
+      ["Summer Triangle", "Deneb"],
+      ["Summer Triangle", "Vega"],
+      ["Summer Triangle", "Altair"],
+      ["Astronomy", "Instruments"],
+      ["Instruments", "Observatories"],
+      ["Observatories", "Gemini N/S"],
+      ["Gemini N/S", "27 Foot Mirror"],
+      ["Instruments", "Rovers"],
+      ["Rovers", "Spirit"],
+      ["Rovers", "Curiosity"],
+      ["Rovers", "Opportunity"],
+      ["Rovers", "Sojourner"],
+      ["Instruments", "Probes"],
+      ["Probes", "Voyager 1/2"],
+      ["Voyager 1/2", "Golden Record"],
+      ["Instruments", "LIGO"],
+      ["LIGO", "Gravitational Waves"]
     ]
   },
   {
@@ -2877,7 +1190,7 @@
       "Circadian Rhythms",
       "City Planning Initiatives",
       "Arc Lighting",
-      "Pine Mountain",
+      "Pine Mountain Observatory",
       "Exoplanets",
       "Telescopes Connected to Computers",
       "Hawaii",
@@ -2885,7 +1198,6 @@
       "Gemini N/S",
       "Light Wavelengths",
       "Shutters",
-      "SHutters",
       "Time Lapse",
       "Space Ships",
       "Rovers",
@@ -2896,158 +1208,44 @@
       "Newton's Laws"
     ],
     "connections": [
-      [
-        "Astronomy",
-        "Stars"
-      ],
-      [
-        "Stars",
-        "Comets"
-      ],
-      [
-        "Comets",
-        "Asteroids"
-      ],
-      [
-        "Stars",
-        "Galaxies"
-      ],
-      [
-        "Stars",
-        "Gas and Dust"
-      ],
-      [
-        "Gas and Dust",
-        "Protons/Neutrons"
-      ],
-      [
-        "Protons/Neutrons",
-        "Carbon"
-      ],
-      [
-        "Carbon",
-        "Hydrogen"
-      ],
-      [
-        "Protons/Neutrons",
-        "The Big Bang"
-      ],
-      [
-        "Astronomy",
-        "Moon"
-      ],
-      [
-        "Moon",
-        "Mars"
-      ],
-      [
-        "Mars",
-        "Sun"
-      ],
-      [
-        "Sun",
-        "Saturn"
-      ],
-      [
-        "Saturn",
-        "Jupiter"
-      ],
-      [
-        "Jupiter",
-        "Mercury"
-      ],
-      [
-        "Astronomy",
-        "Light Pollution"
-      ],
-      [
-        "Light Pollution",
-        "Bortle Scale"
-      ],
-      [
-        "Light Pollution",
-        "Intentional Lighting"
-      ],
-      [
-        "Light Pollution",
-        "Polluted Atmosphere"
-      ],
-      [
-        "Polluted Atmosphere",
-        "Circadian Rhythms"
-      ],
-      [
-        "Light Pollution",
-        "City Planning Initiatives"
-      ],
-      [
-        "City Planning Initiatives",
-        "Arc Lighting"
-      ],
-      [
-        "Astronomy",
-        "Pine Mountain"
-      ],
-      [
-        "Pine Mountain",
-        "Exoplanets"
-      ],
-      [
-        "Pine Mountain",
-        "Telescopes Connected to Computers"
-      ],
-      [
-        "Telescopes Connected to Computers",
-        "Hawaii"
-      ],
-      [
-        "Telescopes Connected to Computers",
-        "Chile"
-      ],
-      [
-        "Telescopes Connected to Computers",
-        "Gemini N/S"
-      ],
-      [
-        "Telescopes Connected to Computers",
-        "Light Wavelengths"
-      ],
-      [
-        "Light Wavelengths",
-        "Shutters"
-      ],
-      [
-        "SHutters",
-        "Time Lapse"
-      ],
-      [
-        "Telescopes Connected to Computers",
-        "Space Ships"
-      ],
-      [
-        "Space Ships",
-        "Rovers"
-      ],
-      [
-        "Astronomy",
-        "Moon Phases"
-      ],
-      [
-        "Moon Phases",
-        "Gravitational Pull"
-      ],
-      [
-        "Gravitational Pull",
-        "Tides"
-      ],
-      [
-        "Gravitational Pull",
-        "Gravitational Magnitude Force"
-      ],
-      [
-        "Gravitational Magnitude Force",
-        "Newton's Laws"
-      ]
+      ["Astronomy", "Stars"],
+      ["Stars", "Comets"],
+      ["Comets", "Asteroids"],
+      ["Stars", "Galaxies"],
+      ["Stars", "Gas and Dust"],
+      ["Gas and Dust", "Protons/Neutrons"],
+      ["Protons/Neutrons", "Carbon"],
+      ["Carbon", "Hydrogen"],
+      ["Protons/Neutrons", "The Big Bang"],
+      ["Astronomy", "Moon"],
+      ["Moon", "Mars"],
+      ["Mars", "Sun"],
+      ["Sun", "Saturn"],
+      ["Saturn", "Jupiter"],
+      ["Jupiter", "Mercury"],
+      ["Astronomy", "Light Pollution"],
+      ["Light Pollution", "Bortle Scale"],
+      ["Light Pollution", "Intentional Lighting"],
+      ["Light Pollution", "Polluted Atmosphere"],
+      ["Polluted Atmosphere", "Circadian Rhythms"],
+      ["Light Pollution", "City Planning Initiatives"],
+      ["City Planning Initiatives", "Arc Lighting"],
+      ["Astronomy", "Pine Mountain Observatory"],
+      ["Pine Mountain Observatory", "Exoplanets"],
+      ["Pine Mountain Observatory", "Telescopes Connected to Computers"],
+      ["Telescopes Connected to Computers", "Hawaii"],
+      ["Telescopes Connected to Computers", "Chile"],
+      ["Telescopes Connected to Computers", "Gemini N/S"],
+      ["Telescopes Connected to Computers", "Light Wavelengths"],
+      ["Light Wavelengths", "Shutters"],
+      ["Shutters", "Time Lapse"],
+      ["Telescopes Connected to Computers", "Space Ships"],
+      ["Space Ships", "Rovers"],
+      ["Astronomy", "Moon Phases"],
+      ["Moon Phases", "Gravitational Pull"],
+      ["Gravitational Pull", "Tides"],
+      ["Gravitational Pull", "Gravitational Magnitude Force"],
+      ["Gravitational Magnitude Force", "Newton's Laws"]
     ]
   },
   {
@@ -3132,330 +1330,87 @@
       "Gemini"
     ],
     "connections": [
-      [
-        "Astronomy",
-        "Planets"
-      ],
-      [
-        "Planets",
-        "Exoplanets"
-      ],
-      [
-        "Planets",
-        "Venus"
-      ],
-      [
-        "Venus",
-        "Mons Olympus"
-      ],
-      [
-        "Mons Olympus",
-        "Space Volcanoes"
-      ],
-      [
-        "Venus",
-        "Heat"
-      ],
-      [
-        "Heat",
-        "The Sun"
-      ],
-      [
-        "The Sun",
-        "Elements"
-      ],
-      [
-        "The Sun",
-        "Solar Flares"
-      ],
-      [
-        "The Sun",
-        "Solar Eclipse"
-      ],
-      [
-        "Solar Eclipse",
-        "Lunar Eclipse"
-      ],
-      [
-        "Lunar Eclipse",
-        "Tides"
-      ],
-      [
-        "Elements",
-        "Big Bang"
-      ],
-      [
-        "Big Bang",
-        "Biological Evolution"
-      ],
-      [
-        "Biological Evolution",
-        "Light Pollution"
-      ],
-      [
-        "Elements",
-        "Biological Evolution"
-      ],
-      [
-        "Elements",
-        "Robert Oppenheimer"
-      ],
-      [
-        "Elements",
-        "Gas"
-      ],
-      [
-        "Gas",
-        "Dust"
-      ],
-      [
-        "Dust",
-        "Nebulae"
-      ],
-      [
-        "Nebulae",
-        "Galaxies"
-      ],
-      [
-        "Galaxies",
-        "Whirlpool Galaxy"
-      ],
-      [
-        "Galaxies",
-        "Andromeds"
-      ],
-      [
-        "Galaxies",
-        "Expanding Galaxies Theory"
-      ],
-      [
-        "Whirlpool Galaxy",
-        "Astrophotography"
-      ],
-      [
-        "Astrophotography",
-        "Star Mapping"
-      ],
-      [
-        "Robert Oppenheimer",
-        "Nuclear Warfare"
-      ],
-      [
-        "Nuclear Warfare",
-        "US Government"
-      ],
-      [
-        "Nuclear Warfare",
-        "Anti Asteroid Missiles"
-      ],
-      [
-        "Astronomy",
-        "Moons"
-      ],
-      [
-        "Moons",
-        "Titan"
-      ],
-      [
-        "Moons",
-        "Europa"
-      ],
-      [
-        "Astronomy",
-        "Stars"
-      ],
-      [
-        "Stars",
-        "Constellations"
-      ],
-      [
-        "Constellations",
-        "Mythology"
-      ],
-      [
-        "Mythology",
-        "Astrology"
-      ],
-      [
-        "Stars",
-        "White Dwarfs"
-      ],
-      [
-        "Stars",
-        "Star Life Cycles"
-      ],
-      [
-        "Star Life Cycles",
-        "Supernovae"
-      ],
-      [
-        "Supernovae",
-        "Speed of Light"
-      ],
-      [
-        "Speed of Light",
-        "Star Wars"
-      ],
-      [
-        "Star Life Cycles",
-        "Quasars"
-      ],
-      [
-        "Quasars",
-        "Black Holes"
-      ],
-      [
-        "Star Life Cycles",
-        "Black Holes"
-      ],
-      [
-        "Black Holes",
-        "Event Horizon"
-      ],
-      [
-        "Event Horizon",
-        "Interstellar"
-      ],
-      [
-        "Black Holes",
-        "Dark Matter"
-      ],
-      [
-        "Dark Matter",
-        "Axions"
-      ],
-      [
-        "Axions",
-        "Particles"
-      ],
-      [
-        "Marticles",
-        "Atoms"
-      ],
-      [
-        "Black Holes",
-        "Gravity"
-      ],
-      [
-        "Gravity",
-        "General Relativity"
-      ],
-      [
-        "General Relativity",
-        "Albert Einstein"
-      ],
-      [
-        "Albert Einstein",
-        "String Theory"
-      ],
-      [
-        "Albert Einstein",
-        "Galileo"
-      ],
-      [
-        "Galileo",
-        "Telescopes"
-      ],
-      [
-        "Telescopes",
-        "Astronomical Observation"
-      ],
-      [
-        "Astronomical Observation",
-        "Tycho Brahe"
-      ],
-      [
-        "Planets",
-        "Saturn"
-      ],
-      [
-        "Saturn",
-        "Rings"
-      ],
-      [
-        "Rings",
-        "Uranus"
-      ],
-      [
-        "Planets",
-        "Uranus"
-      ],
-      [
-        "Uranus",
-        "Tilted Axis"
-      ],
-      [
-        "Planets",
-        "Neptune"
-      ],
-      [
-        "Neptune",
-        "Water"
-      ],
-      [
-        "Water",
-        "Aliens"
-      ],
-      [
-        "Water",
-        "Comets"
-      ],
-      [
-        "Comets",
-        "Objects"
-      ],
-      [
-        "Planets",
-        "Objects"
-      ],
-      [
-        "Planets",
-        "Exoplanets"
-      ],
-      [
-        "Astronomy",
-        "Space Exploration"
-      ],
-      [
-        "Space Exploration",
-        "Elon Musk"
-      ],
-      [
-        "Space Exploration",
-        "Laika"
-      ],
-      [
-        "Laika",
-        "ISS Spider"
-      ],
-      [
-        "Laika",
-        "Russia's Failed Space Program"
-      ],
-      [
-        "Russia's Failed Space Program",
-        "Australia's Failed Rocket"
-      ],
-      [
-        "Space Exploration",
-        "NASA"
-      ],
-      [
-        "NASA",
-        "Hubble Telescope"
-      ],
-      [
-        "Hubble Telescope",
-        "Pine Mountain OBservatory"
-      ],
-      [
-        "Hubble Telescope",
-        "Gemini"
-      ],
-      [
-        "Gemini",
-        "Astrology"
-      ]
+      ["Astronomy", "Planets"],
+      ["Planets", "Exoplanets"],
+      ["Planets", "Venus"],
+      ["Venus", "Mons Olympus"],
+      ["Mons Olympus", "Space Volcanoes"],
+      ["Venus", "Heat"],
+      ["Heat", "The Sun"],
+      ["The Sun", "Elements"],
+      ["The Sun", "Solar Flares"],
+      ["The Sun", "Solar Eclipse"],
+      ["Solar Eclipse", "Lunar Eclipse"],
+      ["Lunar Eclipse", "Tides"],
+      ["Elements", "Big Bang"],
+      ["Big Bang", "Biological Evolution"],
+      ["Biological Evolution", "Light Pollution"],
+      ["Elements", "Biological Evolution"],
+      ["Elements", "Robert Oppenheimer"],
+      ["Elements", "Gas"],
+      ["Gas", "Dust"],
+      ["Dust", "Nebulae"],
+      ["Nebulae", "Galaxies"],
+      ["Galaxies", "Whirlpool Galaxy"],
+      ["Galaxies", "Andromeds"],
+      ["Galaxies", "Expanding Galaxies Theory"],
+      ["Whirlpool Galaxy", "Astrophotography"],
+      ["Astrophotography", "Star Mapping"],
+      ["Robert Oppenheimer", "Nuclear Warfare"],
+      ["Nuclear Warfare", "US Government"],
+      ["Nuclear Warfare", "Anti Asteroid Missiles"],
+      ["Astronomy", "Moons"],
+      ["Moons", "Titan"],
+      ["Moons", "Europa"],
+      ["Astronomy", "Stars"],
+      ["Stars", "Constellations"],
+      ["Constellations", "Mythology"],
+      ["Mythology", "Astrology"],
+      ["Stars", "White Dwarfs"],
+      ["Stars", "Star Life Cycles"],
+      ["Star Life Cycles", "Supernovae"],
+      ["Supernovae", "Speed of Light"],
+      ["Speed of Light", "Star Wars"],
+      ["Star Life Cycles", "Quasars"],
+      ["Quasars", "Black Holes"],
+      ["Star Life Cycles", "Black Holes"],
+      ["Black Holes", "Event Horizon"],
+      ["Event Horizon", "Interstellar"],
+      ["Black Holes", "Dark Matter"],
+      ["Dark Matter", "Axions"],
+      ["Axions", "Particles"],
+      ["Marticles", "Atoms"],
+      ["Black Holes", "Gravity"],
+      ["Gravity", "General Relativity"],
+      ["General Relativity", "Albert Einstein"],
+      ["Albert Einstein", "String Theory"],
+      ["Albert Einstein", "Galileo"],
+      ["Galileo", "Telescopes"],
+      ["Telescopes", "Astronomical Observation"],
+      ["Astronomical Observation", "Tycho Brahe"],
+      ["Planets", "Saturn"],
+      ["Saturn", "Rings"],
+      ["Rings", "Uranus"],
+      ["Planets", "Uranus"],
+      ["Uranus", "Tilted Axis"],
+      ["Planets", "Neptune"],
+      ["Neptune", "Water"],
+      ["Water", "Aliens"],
+      ["Water", "Comets"],
+      ["Comets", "Objects"],
+      ["Planets", "Objects"],
+      ["Planets", "Exoplanets"],
+      ["Astronomy", "Space Exploration"],
+      ["Space Exploration", "Elon Musk"],
+      ["Space Exploration", "Laika"],
+      ["Laika", "ISS Spider"],
+      ["Laika", "Russia's Failed Space Program"],
+      ["Russia's Failed Space Program", "Australia's Failed Rocket"],
+      ["Space Exploration", "NASA"],
+      ["NASA", "Hubble Telescope"],
+      ["Hubble Telescope", "Pine Mountain OBservatory"],
+      ["Hubble Telescope", "Gemini"],
+      ["Gemini", "Astrology"]
     ]
   },
   {
@@ -3510,218 +1465,59 @@
       "Hubble"
     ],
     "connections": [
-      [
-        "Astronomy",
-        "The Big Bang"
-      ],
-      [
-        "The Big Bang",
-        "BAZINGA!"
-      ],
-      [
-        "Astronomy",
-        "Black Holes"
-      ],
-      [
-        "Astronomy",
-        "Sci Fi"
-      ],
-      [
-        "Sci Fi",
-        "The Martian"
-      ],
-      [
-        "Sci Fi",
-        "Star Wars"
-      ],
-      [
-        "Sci Fi",
-        "DC"
-      ],
-      [
-        "Sci Fi",
-        "Star Trek"
-      ],
-      [
-        "Astronomy",
-        "Galaxies"
-      ],
-      [
-        "Galaxies",
-        "Different Shapes"
-      ],
-      [
-        "Galaxies",
-        "Andromeda"
-      ],
-      [
-        "Galaxies",
-        "The Milky Way"
-      ],
-      [
-        "The Milky Way",
-        "Our Crib"
-      ],
-      [
-        "Our Crib",
-        "Earth"
-      ],
-      [
-        "Our Crib",
-        "The Sun"
-      ],
-      [
-        "Our Crib",
-        "The Milky Way"
-      ],
-      [
-        "Our Crib",
-        "Stars"
-      ],
-      [
-        "Stars",
-        "Constellations"
-      ],
-      [
-        "Constellations",
-        "Orion"
-      ],
-      [
-        "Orion",
-        "Stars"
-      ],
-      [
-        "Our Sun",
-        "Other Suns"
-      ],
-      [
-        "Other Suns",
-        "Eclipses"
-      ],
-      [
-        "Other Suns",
-        "Aliens"
-      ],
-      [
-        "Our Crib",
-        "Saturn"
-      ],
-      [
-        "Saturn",
-        "Europa"
-      ],
-      [
-        "Saturn",
-        "Rings"
-      ],
-      [
-        "Saturn",
-        "Lots of Moons"
-      ],
-      [
-        "Lots of Moons",
-        "Europa"
-      ],
-      [
-        "Our Crib",
-        "Venus"
-      ],
-      [
-        "Our Crib",
-        "Comets"
-      ],
-      [
-        "Earth",
-        "The Moon"
-      ],
-      [
-        "Earth",
-        "Planets"
-      ],
-      [
-        "Our Crib",
-        "Big Things"
-      ],
-      [
-        "Astronomy",
-        "Big Things"
-      ],
-      [
-        "Our Crib",
-        "Kuiper Belt"
-      ],
-      [
-        "Our Crib",
-        "Mars"
-      ],
-      [
-        "Astronomy",
-        "Our Crib"
-      ],
-      [
-        "Big Things",
-        "Asteroids"
-      ],
-      [
-        "Big Things",
-        "Planets"
-      ],
-      [
-        "Planets",
-        "Moon"
-      ],
-      [
-        "Planets",
-        "Sailor Moon"
-      ],
-      [
-        "Planets",
-        "Earth"
-      ],
-      [
-        "Earth",
-        "Earthlike Planets"
-      ],
-      [
-        "Astronomy",
-        "Mythology"
-      ],
-      [
-        "Mythology",
-        "Gemini"
-      ],
-      [
-        "Astronomy",
-        "Observatories"
-      ],
-      [
-        "Observatories",
-        "Pine Mountain Observatory"
-      ],
-      [
-        "Observatories",
-        "NASA"
-      ],
-      [
-        "NASA",
-        "SpaceX"
-      ],
-      [
-        "Observatories",
-        "Gemini N/S"
-      ],
-      [
-        "Observatories",
-        "Telescopes"
-      ],
-      [
-        "Telescopes",
-        "Hubble"
-      ],
-      [
-        "Observatories",
-        "Big Things"
-      ]
+      ["Astronomy", "The Big Bang"],
+      ["The Big Bang", "BAZINGA!"],
+      ["Astronomy", "Black Holes"],
+      ["Astronomy", "Sci Fi"],
+      ["Sci Fi", "The Martian"],
+      ["Sci Fi", "Star Wars"],
+      ["Sci Fi", "DC"],
+      ["Sci Fi", "Star Trek"],
+      ["Astronomy", "Galaxies"],
+      ["Galaxies", "Different Shapes"],
+      ["Galaxies", "Andromeda"],
+      ["Galaxies", "The Milky Way"],
+      ["The Milky Way", "Our Crib"],
+      ["Our Crib", "Earth"],
+      ["Our Crib", "The Sun"],
+      ["Our Crib", "The Milky Way"],
+      ["Our Crib", "Stars"],
+      ["Stars", "Constellations"],
+      ["Constellations", "Orion"],
+      ["Orion", "Stars"],
+      ["Our Sun", "Other Suns"],
+      ["Other Suns", "Eclipses"],
+      ["Other Suns", "Aliens"],
+      ["Our Crib", "Saturn"],
+      ["Saturn", "Europa"],
+      ["Saturn", "Rings"],
+      ["Saturn", "Lots of Moons"],
+      ["Lots of Moons", "Europa"],
+      ["Our Crib", "Venus"],
+      ["Our Crib", "Comets"],
+      ["Earth", "The Moon"],
+      ["Earth", "Planets"],
+      ["Our Crib", "Big Things"],
+      ["Astronomy", "Big Things"],
+      ["Our Crib", "Kuiper Belt"],
+      ["Our Crib", "Mars"],
+      ["Astronomy", "Our Crib"],
+      ["Big Things", "Asteroids"],
+      ["Big Things", "Planets"],
+      ["Planets", "Moon"],
+      ["Planets", "Sailor Moon"],
+      ["Planets", "Earth"],
+      ["Earth", "Earthlike Planets"],
+      ["Astronomy", "Mythology"],
+      ["Mythology", "Gemini"],
+      ["Astronomy", "Observatories"],
+      ["Observatories", "Pine Mountain Observatory"],
+      ["Observatories", "NASA"],
+      ["NASA", "SpaceX"],
+      ["Observatories", "Gemini N/S"],
+      ["Observatories", "Telescopes"],
+      ["Telescopes", "Hubble"],
+      ["Observatories", "Big Things"]
     ]
   },
   {
@@ -3761,174 +1557,48 @@
       "Black Hole"
     ],
     "connections": [
-      [
-        "Astronomy",
-        "Constellations"
-      ],
-      [
-        "Constellations",
-        "Mythology"
-      ],
-      [
-        "Constellations",
-        "Pine Mountain Observatory"
-      ],
-      [
-        "Pine Mountain Observatory",
-        "Nature"
-      ],
-      [
-        "Nature",
-        "Extraterrestrial Life"
-      ],
-      [
-        "Nature",
-        "Gemini N/S"
-      ],
-      [
-        "Gemini N/S",
-        "Observatories"
-      ],
-      [
-        "Pine Mountain Observatory",
-        "Observatories"
-      ],
-      [
-        "Observatories",
-        "Telescopes"
-      ],
-      [
-        "Observatories",
-        "NASA"
-      ],
-      [
-        "Observatories",
-        "JWST"
-      ],
-      [
-        "NASA",
-        "JWST"
-      ],
-      [
-        "NASA",
-        "Space Programs"
-      ],
-      [
-        "Space Programs",
-        "Mars Rovers"
-      ],
-      [
-        "JWST",
-        "Hubble"
-      ],
-      [
-        "JWST",
-        "Doppler Shift"
-      ],
-      [
-        "Astronomy",
-        "Physics"
-      ],
-      [
-        "Astronomy",
-        "Observatories"
-      ],
-      [
-        "Physics",
-        "Doppler Shift"
-      ],
-      [
-        "Astronomy",
-        "Planets"
-      ],
-      [
-        "Constellations",
-        "Planets"
-      ],
-      [
-        "Planets",
-        "Moon"
-      ],
-      [
-        "Constellations",
-        "Stellar Evolution"
-      ],
-      [
-        "Stellar Evolution",
-        "Astronomy"
-      ],
-      [
-        "Stellar Evolution",
-        "Physics"
-      ],
-      [
-        "Stellar Evolution",
-        "Supernovae"
-      ],
-      [
-        "Stellar Evolution",
-        "Nebulae"
-      ],
-      [
-        "Supernovae",
-        "Nebulae"
-      ],
-      [
-        "Nebulae",
-        "Galaxies"
-      ],
-      [
-        "Galaxies",
-        "Solar System"
-      ],
-      [
-        "Solar System",
-        "Comets/Asteroids"
-      ],
-      [
-        "Solar System",
-        "Stars"
-      ],
-      [
-        "Comets/Asteroids",
-        "Planets"
-      ],
-      [
-        "Galaxies",
-        "Local Group"
-      ],
-      [
-        "Local Group",
-        "Supercluster"
-      ],
-      [
-        "Supercluster",
-        "Observable Universe"
-      ],
-      [
-        "Observable Universe",
-        "Expansion of Space"
-      ],
-      [
-        "Supernovae",
-        "Relativity"
-      ],
-      [
-        "Relativity",
-        "Quantum"
-      ],
-      [
-        "Relativity",
-        "Black Hole"
-      ],
-      [
-        "Physics",
-        "Black Hole"
-      ],
-      [
-        "Physics",
-        "Supernovae"
-      ]
+      ["Astronomy", "Constellations"],
+      ["Constellations", "Mythology"],
+      ["Constellations", "Pine Mountain Observatory"],
+      ["Pine Mountain Observatory", "Nature"],
+      ["Nature", "Extraterrestrial Life"],
+      ["Nature", "Gemini N/S"],
+      ["Gemini N/S", "Observatories"],
+      ["Pine Mountain Observatory", "Observatories"],
+      ["Observatories", "Telescopes"],
+      ["Observatories", "NASA"],
+      ["Observatories", "JWST"],
+      ["NASA", "JWST"],
+      ["NASA", "Space Programs"],
+      ["Space Programs", "Mars Rovers"],
+      ["JWST", "Hubble"],
+      ["JWST", "Doppler Shift"],
+      ["Astronomy", "Physics"],
+      ["Astronomy", "Observatories"],
+      ["Physics", "Doppler Shift"],
+      ["Astronomy", "Planets"],
+      ["Constellations", "Planets"],
+      ["Planets", "Moon"],
+      ["Constellations", "Stellar Evolution"],
+      ["Stellar Evolution", "Astronomy"],
+      ["Stellar Evolution", "Physics"],
+      ["Stellar Evolution", "Supernovae"],
+      ["Stellar Evolution", "Nebulae"],
+      ["Supernovae", "Nebulae"],
+      ["Nebulae", "Galaxies"],
+      ["Galaxies", "Solar System"],
+      ["Solar System", "Comets/Asteroids"],
+      ["Solar System", "Stars"],
+      ["Comets/Asteroids", "Planets"],
+      ["Galaxies", "Local Group"],
+      ["Local Group", "Supercluster"],
+      ["Supercluster", "Observable Universe"],
+      ["Observable Universe", "Expansion of Space"],
+      ["Supernovae", "Relativity"],
+      ["Relativity", "Quantum"],
+      ["Relativity", "Black Hole"],
+      ["Physics", "Black Hole"],
+      ["Physics", "Supernovae"]
     ]
   },
   {
@@ -3999,410 +1669,107 @@
       "Antimatter"
     ],
     "connections": [
-      [
-        "Astronomy",
-        "Observatories"
-      ],
-      [
-        "Observatories",
-        "Light Pollution"
-      ],
-      [
-        "Observatories",
-        "Gemini N/S"
-      ],
-      [
-        "Gemini N/S",
-        "North Hemisphere"
-      ],
-      [
-        "Gemini N/S",
-        "South Hemisphere"
-      ],
-      [
-        "North Hemisphere",
-        "Hawaii"
-      ],
-      [
-        "South Hemisphere",
-        "Chile"
-      ],
-      [
-        "Chile",
-        "Light Pollution"
-      ],
-      [
-        "Hawaii",
-        "USA"
-      ],
-      [
-        "USA",
-        "Oregon"
-      ],
-      [
-        "Oregon",
-        "Eugene, Oregon"
-      ],
-      [
-        "Light Pollution",
-        "USA"
-      ],
-      [
-        "Light Pollution",
-        "Bend, Oregon"
-      ],
-      [
-        "Bend, Oregon",
-        "Pine Mountain Observatory"
-      ],
-      [
-        "Observatories",
-        "Pine Mountain Observatory"
-      ],
-      [
-        "Pine Mountain Observatory",
-        "University of Oregon"
-      ],
-      [
-        "Eugene, Oregon",
-        "University of Oregon"
-      ],
-      [
-        "University of Oregon",
-        "Pretty"
-      ],
-      [
-        "Eugene, Oregon",
-        "Pretty"
-      ],
-      [
-        "USA",
-        "Pretty"
-      ],
-      [
-        "Hawaii",
-        "Pretty"
-      ],
-      [
-        "Chile",
-        "Pretty"
-      ],
-      [
-        "Bend,Oregon",
-        "Pretty"
-      ],
-      [
-        "Oregon",
-        "Pretty"
-      ],
-      [
-        "University of Oregon",
-        "Physics"
-      ],
-      [
-        "Physics",
-        "Telescopes"
-      ],
-      [
-        "Observatories",
-        "Telescopes"
-      ],
-      [
-        "Telescopes",
-        "Compound"
-      ],
-      [
-        "Telescopes",
-        "Refractor"
-      ],
-      [
-        "Telescopes",
-        "Radio"
-      ],
-      [
-        "Telescopes",
-        "Optic"
-      ],
-      [
-        "Optic",
-        "Ultraviolet"
-      ],
-      [
-        "Physics",
-        "Optic"
-      ],
-      [
-        "Optic",
-        "Infrared"
-      ],
-      [
-        "Telescopes",
-        "Infrared"
-      ],
-      [
-        "Physics",
-        "Infrared"
-      ],
-      [
-        "Physics",
-        "Ultraviolet"
-      ],
-      [
-        "Telescopes",
-        "NASA"
-      ],
-      [
-        "NASA",
-        "Science Conferences"
-      ],
-      [
-        "Radio",
-        "Science Conferences"
-      ],
-      [
-        "Astronomy",
-        "Science Conferences"
-      ],
-      [
-        "Science Conferences",
-        "Biology"
-      ],
-      [
-        "Astronomy",
-        "Chemistry"
-      ],
-      [
-        "Chemistry",
-        "Biology"
-      ],
-      [
-        "Biology",
-        "Astrobiology"
-      ],
-      [
-        "Biology",
-        "Marine Biology"
-      ],
-      [
-        "Marine Biology",
-        "Science Conferences"
-      ],
-      [
-        "Chemistry",
-        "Science Conferences"
-      ],
-      [
-        "Biology",
-        "Data"
-      ],
-      [
-        "Science Conferences",
-        "Presentations"
-      ],
-      [
-        "Presentations",
-        "Analysis"
-      ],
-      [
-        "Analysis",
-        "Charts"
-      ],
-      [
-        "Analysis",
-        "Graphs"
-      ],
-      [
-        "Analysis",
-        "Data"
-      ],
-      [
-        "Data",
-        "Math"
-      ],
-      [
-        "Data",
-        "Physics"
-      ],
-      [
-        "Math",
-        "Chemistry"
-      ],
-      [
-        "Physics",
-        "Chemistry"
-      ],
-      [
-        "Data",
-        "Chemistry"
-      ],
-      [
-        "Data",
-        "Marine Biology"
-      ],
-      [
-        "Data",
-        "Astrophysics"
-      ],
-      [
-        "Math",
-        "Physics"
-      ],
-      [
-        "Math",
-        "Bad"
-      ],
-      [
-        "Bad",
-        "Physics"
-      ],
-      [
-        "Bad",
-        "Death"
-      ],
-      [
-        "Death",
-        "Astrophysics"
-      ],
-      [
-        "Death",
-        "Big Crunch"
-      ],
-      [
-        "Death",
-        "Big Rip"
-      ],
-      [
-        "Big Rip",
-        "The Big Bang"
-      ],
-      [
-        "The Big Bang",
-        "Birth"
-      ],
-      [
-        "Birth",
-        "Nebulae"
-      ],
-      [
-        "Nebulae",
-        "The Universe"
-      ],
-      [
-        "The Universe",
-        "Irregular"
-      ],
-      [
-        "Galaxies",
-        "Irregular"
-      ],
-      [
-        "Galaxies",
-        "Spiral"
-      ],
-      [
-        "Galaxies",
-        "Elliptical"
-      ],
-      [
-        "Balaxies",
-        "Black Holes"
-      ],
-      [
-        "Black Holes",
-        "The Sun"
-      ],
-      [
-        "The Sun",
-        "Solar Systems"
-      ],
-      [
-        "Galaxies",
-        "Solar Systems"
-      ],
-      [
-        "The Sun",
-        "Newton Star"
-      ],
-      [
-        "The Sun",
-        "Supernovae"
-      ],
-      [
-        "Solar Systems",
-        "Planets"
-      ],
-      [
-        "Planets",
-        "Moons"
-      ],
-      [
-        "Planets",
-        "Exoplanets"
-      ],
-      [
-        "Planets",
-        "Earth"
-      ],
-      [
-        "Moons",
-        "Earth"
-      ],
-      [
-        "Earth",
-        "The Moon"
-      ],
-      [
-        "Exoplanets",
-        "Extraterrestrial Life"
-      ],
-      [
-        "Astrobiology",
-        "Extraterrestrial Life"
-      ],
-      [
-        "Galaxies",
-        "The Universe"
-      ],
-      [
-        "Astronomy",
-        "Study of the Universe"
-      ],
-      [
-        "Study of the Universe",
-        "The Universe"
-      ],
-      [
-        "Study of the Universe",
-        "Antimatter"
-      ],
-      [
-        "Antimatter",
-        "Big Crunch"
-      ],
-      [
-        "Big Crunch",
-        "The Universe"
-      ],
-      [
-        "The Big Bang",
-        "The Universe"
-      ],
-      [
-        "Astronomy",
-        "Physics"
-      ],
-      [
-        "Physics",
-        "Refractor"
-      ],
-      [
-        "Bad",
-        "Antimatter"
-      ],
-      [
-        "The Universe",
-        "Solar Systems"
-      ]
+      ["Astronomy", "Observatories"],
+      ["Observatories", "Light Pollution"],
+      ["Observatories", "Gemini N/S"],
+      ["Gemini N/S", "North Hemisphere"],
+      ["Gemini N/S", "South Hemisphere"],
+      ["North Hemisphere", "Hawaii"],
+      ["South Hemisphere", "Chile"],
+      ["Chile", "Light Pollution"],
+      ["Hawaii", "USA"],
+      ["USA", "Oregon"],
+      ["Oregon", "Eugene, Oregon"],
+      ["Light Pollution", "USA"],
+      ["Light Pollution", "Bend, Oregon"],
+      ["Bend, Oregon", "Pine Mountain Observatory"],
+      ["Observatories", "Pine Mountain Observatory"],
+      ["Pine Mountain Observatory", "University of Oregon"],
+      ["Eugene, Oregon", "University of Oregon"],
+      ["University of Oregon", "Pretty"],
+      ["Eugene, Oregon", "Pretty"],
+      ["USA", "Pretty"],
+      ["Hawaii", "Pretty"],
+      ["Chile", "Pretty"],
+      ["Bend,Oregon", "Pretty"],
+      ["Oregon", "Pretty"],
+      ["University of Oregon", "Physics"],
+      ["Physics", "Telescopes"],
+      ["Observatories", "Telescopes"],
+      ["Telescopes", "Compound"],
+      ["Telescopes", "Refractor"],
+      ["Telescopes", "Radio"],
+      ["Telescopes", "Optic"],
+      ["Optic", "Ultraviolet"],
+      ["Physics", "Optic"],
+      ["Optic", "Infrared"],
+      ["Telescopes", "Infrared"],
+      ["Physics", "Infrared"],
+      ["Physics", "Ultraviolet"],
+      ["Telescopes", "NASA"],
+      ["NASA", "Science Conferences"],
+      ["Radio", "Science Conferences"],
+      ["Astronomy", "Science Conferences"],
+      ["Science Conferences", "Biology"],
+      ["Astronomy", "Chemistry"],
+      ["Chemistry", "Biology"],
+      ["Biology", "Astrobiology"],
+      ["Biology", "Marine Biology"],
+      ["Marine Biology", "Science Conferences"],
+      ["Chemistry", "Science Conferences"],
+      ["Biology", "Data"],
+      ["Science Conferences", "Presentations"],
+      ["Presentations", "Analysis"],
+      ["Analysis", "Charts"],
+      ["Analysis", "Graphs"],
+      ["Analysis", "Data"],
+      ["Data", "Math"],
+      ["Data", "Physics"],
+      ["Math", "Chemistry"],
+      ["Physics", "Chemistry"],
+      ["Data", "Chemistry"],
+      ["Data", "Marine Biology"],
+      ["Data", "Astrophysics"],
+      ["Math", "Physics"],
+      ["Math", "Bad"],
+      ["Bad", "Physics"],
+      ["Bad", "Death"],
+      ["Death", "Astrophysics"],
+      ["Death", "Big Crunch"],
+      ["Death", "Big Rip"],
+      ["Big Rip", "The Big Bang"],
+      ["The Big Bang", "Birth"],
+      ["Birth", "Nebulae"],
+      ["Nebulae", "The Universe"],
+      ["The Universe", "Irregular"],
+      ["Galaxies", "Irregular"],
+      ["Galaxies", "Spiral"],
+      ["Galaxies", "Elliptical"],
+      ["Balaxies", "Black Holes"],
+      ["Black Holes", "The Sun"],
+      ["The Sun", "Solar Systems"],
+      ["Galaxies", "Solar Systems"],
+      ["The Sun", "Newton Star"],
+      ["The Sun", "Supernovae"],
+      ["Solar Systems", "Planets"],
+      ["Planets", "Moons"],
+      ["Planets", "Exoplanets"],
+      ["Planets", "Earth"],
+      ["Moons", "Earth"],
+      ["Earth", "The Moon"],
+      ["Exoplanets", "Extraterrestrial Life"],
+      ["Astrobiology", "Extraterrestrial Life"],
+      ["Galaxies", "The Universe"],
+      ["Astronomy", "Study of the Universe"],
+      ["Study of the Universe", "The Universe"],
+      ["Study of the Universe", "Antimatter"],
+      ["Antimatter", "Big Crunch"],
+      ["Big Crunch", "The Universe"],
+      ["The Big Bang", "The Universe"],
+      ["Astronomy", "Physics"],
+      ["Physics", "Refractor"],
+      ["Bad", "Antimatter"],
+      ["The Universe", "Solar Systems"]
     ]
   },
   {
@@ -4475,322 +1842,85 @@
       "RLQSO"
     ],
     "connections": [
-      [
-        "Astronomy",
-        "Stars"
-      ],
-      [
-        "Stars",
-        "Sun"
-      ],
-      [
-        "Stars",
-        "Star Clusters"
-      ],
-      [
-        "Stars",
-        "Galaxies"
-      ],
-      [
-        "Stars",
-        "Y"
-      ],
-      [
-        "Stars",
-        "K"
-      ],
-      [
-        "Stars",
-        "T"
-      ],
-      [
-        "Stars",
-        "L"
-      ],
-      [
-        "Stars",
-        "M"
-      ],
-      [
-        "Stars",
-        "G"
-      ],
-      [
-        "Stars",
-        "F"
-      ],
-      [
-        "Stars",
-        "A"
-      ],
-      [
-        "Stars",
-        "B"
-      ],
-      [
-        "Stars",
-        "O"
-      ],
-      [
-        "Y",
-        "Brown Dwarfs"
-      ],
-      [
-        "T",
-        "Brown Dwarfs"
-      ],
-      [
-        "L",
-        "Brown Dwarfs"
-      ],
-      [
-        "M",
-        "Red Dwarfs"
-      ],
-      [
-        "K",
-        "Giants"
-      ],
-      [
-        "G",
-        "Giants"
-      ],
-      [
-        "F",
-        "Giants"
-      ],
-      [
-        "A",
-        "Giants"
-      ],
-      [
-        "Red Dwarfs",
-        "White Dwarfs"
-      ],
-      [
-        "Giants",
-        "White Dwarfs"
-      ],
-      [
-        "Giants",
-        "Planetary Nebulae"
-      ],
-      [
-        "B",
-        "Supergiants"
-      ],
-      [
-        "O",
-        "Supergiants"
-      ],
-      [
-        "O",
-        "Wolf Rayet"
-      ],
-      [
-        "O",
-        "Hypergiants"
-      ],
-      [
-        "Wolf Rayet",
-        "Hypergiants"
-      ],
-      [
-        "Wolf Rayet",
-        "Hypernovae"
-      ],
-      [
-        "Hypergiants",
-        "Hypernovae"
-      ],
-      [
-        "Supergiants",
-        "Supernovae"
-      ],
-      [
-        "Hypergiants",
-        "Supernovae"
-      ],
-      [
-        "Supernovae",
-        "Black Holes"
-      ],
-      [
-        "Supernovae",
-        "Neutron Stars"
-      ],
-      [
-        "Neutron Stars",
-        "Kilonovae"
-      ],
-      [
-        "Kilonovae",
-        "Gamma Ray Burst"
-      ],
-      [
-        "Black Holes",
-        "Gamma Ray Burst"
-      ],
-      [
-        "Gamma Ray Burst",
-        "Hypernovae"
-      ],
-      [
-        "Astronomy",
-        "Solar System"
-      ],
-      [
-        "Solar System",
-        "The Sun"
-      ],
-      [
-        "Solar System",
-        "Planets"
-      ],
-      [
-        "Planets",
-        "Moons"
-      ],
-      [
-        "Planets",
-        "Gas Giants"
-      ],
-      [
-        "Gas Giants",
-        "Jupiter"
-      ],
-      [
-        "Gas Giants",
-        "Saturn"
-      ],
-      [
-        "Gas Giants",
-        "Ice Giants"
-      ],
-      [
-        "Ice Giants",
-        "Uranus"
-      ],
-      [
-        "Ice Giants",
-        "Neptune"
-      ],
-      [
-        "Astronomy",
-        "Galaxies"
-      ],
-      [
-        "Galaxies",
-        "Nebulae"
-      ],
-      [
-        "Star Clusters",
-        "Open"
-      ],
-      [
-        "Star Clusters",
-        "Globular"
-      ],
-      [
-        "Galaxies",
-        "Active Galaxies"
-      ],
-      [
-        "Active Galaxies",
-        "AGN"
-      ],
-      [
-        "AGN",
-        "Black Holes"
-      ],
-      [
-        "AGN",
-        "Low EM Energy"
-      ],
-      [
-        "AGN",
-        "High EM Energy"
-      ],
-      [
-        "Low EM Energy",
-        "Radio Quiet (Low EM)"
-      ],
-      [
-        "Low EM Energy",
-        "Radio Loud (Low EM)"
-      ],
-      [
-        "Radio Quiet (Low EM)",
-        "Seyfert"
-      ],
-      [
-        "Seyfert",
-        "Type 1"
-      ],
-      [
-        "Seyfert",
-        "Type 1.5"
-      ],
-      [
-        "Seyfert",
-        "Type 2"
-      ],
-      [
-        "Radio Loud (Low EM)",
-        "Radio Galaxy"
-      ],
-      [
-        "Radio Loud (Low EM)",
-        "Blazar"
-      ],
-      [
-        "Radio Galaxy",
-        "BLRG"
-      ],
-      [
-        "Radio Galaxy",
-        "NLRG"
-      ],
-      [
-        "Blazar",
-        "BL lac"
-      ],
-      [
-        "High EM Energy",
-        "Radio Quiet (High EM)"
-      ],
-      [
-        "High EM Energy",
-        "Radio Loud (High EM)"
-      ],
-      [
-        "Radio Quiet (High EM)",
-        "Quasars"
-      ],
-      [
-        "Quasars",
-        "Type 1 QSO"
-      ],
-      [
-        "Quasars",
-        "Type 2 QSO"
-      ],
-      [
-        "Radio Loud (High EM)",
-        "Blazar"
-      ],
-      [
-        "Blazar",
-        "OVV"
-      ],
-      [
-        "Radio Loud (High EM)",
-        "Quasars (High EM)"
-      ],
-      [
-        "Quasars (High EM)",
-        "RLQSO"
-      ]
+      ["Astronomy", "Stars"],
+      ["Stars", "Sun"],
+      ["Stars", "Star Clusters"],
+      ["Stars", "Galaxies"],
+      ["Stars", "Y"],
+      ["Stars", "K"],
+      ["Stars", "T"],
+      ["Stars", "L"],
+      ["Stars", "M"],
+      ["Stars", "G"],
+      ["Stars", "F"],
+      ["Stars", "A"],
+      ["Stars", "B"],
+      ["Stars", "O"],
+      ["Y", "Brown Dwarfs"],
+      ["T", "Brown Dwarfs"],
+      ["L", "Brown Dwarfs"],
+      ["M", "Red Dwarfs"],
+      ["K", "Giants"],
+      ["G", "Giants"],
+      ["F", "Giants"],
+      ["A", "Giants"],
+      ["Red Dwarfs", "White Dwarfs"],
+      ["Giants", "White Dwarfs"],
+      ["Giants", "Planetary Nebulae"],
+      ["B", "Supergiants"],
+      ["O", "Supergiants"],
+      ["O", "Wolf Rayet"],
+      ["O", "Hypergiants"],
+      ["Wolf Rayet", "Hypergiants"],
+      ["Wolf Rayet", "Hypernovae"],
+      ["Hypergiants", "Hypernovae"],
+      ["Supergiants", "Supernovae"],
+      ["Hypergiants", "Supernovae"],
+      ["Supernovae", "Black Holes"],
+      ["Supernovae", "Neutron Stars"],
+      ["Neutron Stars", "Kilonovae"],
+      ["Kilonovae", "Gamma Ray Burst"],
+      ["Black Holes", "Gamma Ray Burst"],
+      ["Gamma Ray Burst", "Hypernovae"],
+      ["Astronomy", "Solar System"],
+      ["Solar System", "The Sun"],
+      ["Solar System", "Planets"],
+      ["Planets", "Moons"],
+      ["Planets", "Gas Giants"],
+      ["Gas Giants", "Jupiter"],
+      ["Gas Giants", "Saturn"],
+      ["Gas Giants", "Ice Giants"],
+      ["Ice Giants", "Uranus"],
+      ["Ice Giants", "Neptune"],
+      ["Astronomy", "Galaxies"],
+      ["Galaxies", "Nebulae"],
+      ["Star Clusters", "Open"],
+      ["Star Clusters", "Globular"],
+      ["Galaxies", "Active Galaxies"],
+      ["Active Galaxies", "AGN"],
+      ["AGN", "Black Holes"],
+      ["AGN", "Low EM Energy"],
+      ["AGN", "High EM Energy"],
+      ["Low EM Energy", "Radio Quiet (Low EM)"],
+      ["Low EM Energy", "Radio Loud (Low EM)"],
+      ["Radio Quiet (Low EM)", "Seyfert"],
+      ["Seyfert", "Type 1"],
+      ["Seyfert", "Type 1.5"],
+      ["Seyfert", "Type 2"],
+      ["Radio Loud (Low EM)", "Radio Galaxy"],
+      ["Radio Loud (Low EM)", "Blazar"],
+      ["Radio Galaxy", "BLRG"],
+      ["Radio Galaxy", "NLRG"],
+      ["Blazar", "BL lac"],
+      ["High EM Energy", "Radio Quiet (High EM)"],
+      ["High EM Energy", "Radio Loud (High EM)"],
+      ["Radio Quiet (High EM)", "Quasars"],
+      ["Quasars", "Type 1 QSO"],
+      ["Quasars", "Type 2 QSO"],
+      ["Radio Loud (High EM)", "Blazar"],
+      ["Blazar", "OVV"],
+      ["Radio Loud (High EM)", "Quasars (High EM)"],
+      ["Quasars (High EM)", "RLQSO"]
     ]
   },
   {
@@ -4860,274 +1990,73 @@
       "Supermassive Black Holes"
     ],
     "connections": [
-      [
-        "Astronomy",
-        "Telescopes"
-      ],
-      [
-        "Telescopes",
-        "Radio"
-      ],
-      [
-        "Telescopes",
-        "Optical"
-      ],
-      [
-        "Optical",
-        "Reflector"
-      ],
-      [
-        "Optical",
-        "Refractor"
-      ],
-      [
-        "Optical",
-        "Catadioptic"
-      ],
-      [
-        "Telescopes",
-        "Infrared"
-      ],
-      [
-        "Telescopes",
-        "Ultraviolet"
-      ],
-      [
-        "Telescopes",
-        "Hubble"
-      ],
-      [
-        "Telescopes",
-        "JWST"
-      ],
-      [
-        "Astronomy",
-        "Theory"
-      ],
-      [
-        "Theory",
-        "Quasi Star"
-      ],
-      [
-        "Theory",
-        "Death of the Universe"
-      ],
-      [
-        "Theory",
-        "Relativity"
-      ],
-      [
-        "Relativity",
-        "Physics"
-      ],
-      [
-        "Physics",
-        "Math"
-      ],
-      [
-        "Math",
-        "Bell's Theorem"
-      ],
-      [
-        "Astronomy",
-        "Research"
-      ],
-      [
-        "Research",
-        "Gemini N/S"
-      ],
-      [
-        "Research",
-        "Solar Imaging"
-      ],
-      [
-        "Research",
-        "Other Life"
-      ],
-      [
-        "Other Life",
-        "Habitable Zone"
-      ],
-      [
-        "Research",
-        "Pine Mountain Observatory"
-      ],
-      [
-        "Pine Mountain Observatory",
-        "Oregon"
-      ],
-      [
-        "Astronomy",
-        "Space"
-      ],
-      [
-        "Space",
-        "Galaxies"
-      ],
-      [
-        "Galaxies",
-        "Andromeda"
-      ],
-      [
-        "Andromeda",
-        "Collision"
-      ],
-      [
-        "Space",
-        "Comets"
-      ],
-      [
-        "Space",
-        "Nebulae"
-      ],
-      [
-        "Nebulae",
-        "Dumbbell Nebula"
-      ],
-      [
-        "Galaxies",
-        "Milky Way"
-      ],
-      [
-        "Milky Way",
-        "Sagittarius A"
-      ],
-      [
-        "Milky Way",
-        "Solar System"
-      ],
-      [
-        "Solar System",
-        "The Sun"
-      ],
-      [
-        "The Sun",
-        "Mercury"
-      ],
-      [
-        "Mercury",
-        "Venus"
-      ],
-      [
-        "Venus",
-        "Earth"
-      ],
-      [
-        "Earth",
-        "The Moon"
-      ],
-      [
-        "Earth",
-        "Mars"
-      ],
-      [
-        "Mars",
-        "Opportunity"
-      ],
-      [
-        "Mars",
-        "Kuiper Belt"
-      ],
-      [
-        "Kuiper Belt",
-        "Jupiter"
-      ],
-      [
-        "Jupiter",
-        "Gas Giants"
-      ],
-      [
-        "Jupiter",
-        "Titan"
-      ],
-      [
-        "Jupiter",
-        "Saturn"
-      ],
-      [
-        "Saturn",
-        "Cassini"
-      ],
-      [
-        "Saturn",
-        "Uranus"
-      ],
-      [
-        "Uranus",
-        "Neptune"
-      ],
-      [
-        "Neptune",
-        "Ice Giants"
-      ],
-      [
-        "Neptune",
-        "Dwarf Planets"
-      ],
-      [
-        "Dwarf Planets",
-        "Pluto"
-      ],
-      [
-        "Dwarf Planets",
-        "Charon"
-      ],
-      [
-        "Pluto",
-        "Voyager 1"
-      ],
-      [
-        "Charon",
-        "Theory"
-      ],
-      [
-        "The Sun",
-        "Habitable Zone"
-      ],
-      [
-        "The Sun",
-        "Stars"
-      ],
-      [
-        "Astronomy",
-        "Math"
-      ],
-      [
-        "Telescopes",
-        "Gemini N/S"
-      ],
-      [
-        "Quasi Star",
-        "Stars"
-      ],
-      [
-        "Space",
-        "Stars"
-      ],
-      [
-        "Stars",
-        "Neutron Stars"
-      ],
-      [
-        "Stars",
-        "White Dwarf"
-      ],
-      [
-        "Stars",
-        "Star Clusters"
-      ],
-      [
-        "Stars",
-        "Brown Dwarf"
-      ],
-      [
-        "Brown Dwarf",
-        "Black Holes"
-      ],
-      [
-        "Black Holes",
-        "Supermassive Black Holes"
-      ]
+      ["Astronomy", "Telescopes"],
+      ["Telescopes", "Radio"],
+      ["Telescopes", "Optical"],
+      ["Optical", "Reflector"],
+      ["Optical", "Refractor"],
+      ["Optical", "Catadioptic"],
+      ["Telescopes", "Infrared"],
+      ["Telescopes", "Ultraviolet"],
+      ["Telescopes", "Hubble"],
+      ["Telescopes", "JWST"],
+      ["Astronomy", "Theory"],
+      ["Theory", "Quasi Star"],
+      ["Theory", "Death of the Universe"],
+      ["Theory", "Relativity"],
+      ["Relativity", "Physics"],
+      ["Physics", "Math"],
+      ["Math", "Bell's Theorem"],
+      ["Astronomy", "Research"],
+      ["Research", "Gemini N/S"],
+      ["Research", "Solar Imaging"],
+      ["Research", "Other Life"],
+      ["Other Life", "Habitable Zone"],
+      ["Research", "Pine Mountain Observatory"],
+      ["Pine Mountain Observatory", "Oregon"],
+      ["Astronomy", "Space"],
+      ["Space", "Galaxies"],
+      ["Galaxies", "Andromeda"],
+      ["Andromeda", "Collision"],
+      ["Space", "Comets"],
+      ["Space", "Nebulae"],
+      ["Nebulae", "Dumbbell Nebula"],
+      ["Galaxies", "Milky Way"],
+      ["Milky Way", "Sagittarius A"],
+      ["Milky Way", "Solar System"],
+      ["Solar System", "The Sun"],
+      ["The Sun", "Mercury"],
+      ["Mercury", "Venus"],
+      ["Venus", "Earth"],
+      ["Earth", "The Moon"],
+      ["Earth", "Mars"],
+      ["Mars", "Opportunity"],
+      ["Mars", "Kuiper Belt"],
+      ["Kuiper Belt", "Jupiter"],
+      ["Jupiter", "Gas Giants"],
+      ["Jupiter", "Titan"],
+      ["Jupiter", "Saturn"],
+      ["Saturn", "Cassini"],
+      ["Saturn", "Uranus"],
+      ["Uranus", "Neptune"],
+      ["Neptune", "Ice Giants"],
+      ["Neptune", "Dwarf Planets"],
+      ["Dwarf Planets", "Pluto"],
+      ["Dwarf Planets", "Charon"],
+      ["Pluto", "Voyager 1"],
+      ["Charon", "Theory"],
+      ["The Sun", "Habitable Zone"],
+      ["The Sun", "Stars"],
+      ["Astronomy", "Math"],
+      ["Telescopes", "Gemini N/S"],
+      ["Quasi Star", "Stars"],
+      ["Space", "Stars"],
+      ["Stars", "Neutron Stars"],
+      ["Stars", "White Dwarf"],
+      ["Stars", "Star Clusters"],
+      ["Stars", "Brown Dwarf"],
+      ["Brown Dwarf", "Black Holes"],
+      ["Black Holes", "Supermassive Black Holes"]
     ]
   },
   {
@@ -5180,198 +2109,54 @@
       "Alien"
     ],
     "connections": [
-      [
-        "Astronomy",
-        "Moons"
-      ],
-      [
-        "Moons",
-        "The Moon"
-      ],
-      [
-        "Moons",
-        "Io"
-      ],
-      [
-        "Moons",
-        "Europa"
-      ],
-      [
-        "Moons",
-        "Ganymede"
-      ],
-      [
-        "Moons",
-        "Callisto"
-      ],
-      [
-        "Callisto",
-        "Jupiter"
-      ],
-      [
-        "Ganymede",
-        "Jupiter"
-      ],
-      [
-        "Io",
-        "Jupiter"
-      ],
-      [
-        "Europa",
-        "Jupiter"
-      ],
-      [
-        "Jupiter",
-        "Solar System"
-      ],
-      [
-        "Solar System",
-        "Astronomy"
-      ],
-      [
-        "Solar System",
-        "Earth"
-      ],
-      [
-        "Solar System",
-        "Venus"
-      ],
-      [
-        "Solar System",
-        "Mercury"
-      ],
-      [
-        "Solar System",
-        "Mars"
-      ],
-      [
-        "Solar System",
-        "Saturn"
-      ],
-      [
-        "Solar System",
-        "Neptune"
-      ],
-      [
-        "Solar System",
-        "Uranus"
-      ],
-      [
-        "Astronomy",
-        "Telescopes"
-      ],
-      [
-        "Telescopes",
-        "Hubble"
-      ],
-      [
-        "Telescopes",
-        "James Webb"
-      ],
-      [
-        "Astronomy",
-        "Space Shuttles"
-      ],
-      [
-        "Space Shuttles",
-        "Atlas"
-      ],
-      [
-        "Space Shuttles",
-        "Challenger"
-      ],
-      [
-        "Space Shuttles",
-        "Discovery"
-      ],
-      [
-        "Space Shuttles",
-        "Endeavor"
-      ],
-      [
-        "Astronomy",
-        "Constellations"
-      ],
-      [
-        "Constellations",
-        "Sagittarius"
-      ],
-      [
-        "Constellations",
-        "Orion"
-      ],
-      [
-        "Constellations",
-        "Lyra"
-      ],
-      [
-        "Constellations",
-        "Seven Sisters"
-      ],
-      [
-        "Constellations",
-        "Pegasus"
-      ],
-      [
-        "Constellations",
-        "Taurus"
-      ],
-      [
-        "Astronomy",
-        "Galaxies"
-      ],
-      [
-        "Galaxies",
-        "Andromeda"
-      ],
-      [
-        "Galaxies",
-        "Sombrero"
-      ],
-      [
-        "Galaxies",
-        "Milky Way"
-      ],
-      [
-        "Astronomy",
-        "Pine Mountain Observatory"
-      ],
-      [
-        "Pine Mountain Observatory",
-        "TESS"
-      ],
-      [
-        "Pine Mountain Observatory",
-        "Bend, Oregon"
-      ],
-      [
-        "Astronomy",
-        "Movies"
-      ],
-      [
-        "Movies",
-        "The Martian"
-      ],
-      [
-        "Movies",
-        "Apollo 13"
-      ],
-      [
-        "Movies",
-        "Aliens"
-      ],
-      [
-        "Movies",
-        "Men in Black"
-      ],
-      [
-        "Movies",
-        "Wall E"
-      ],
-      [
-        "Movies",
-        "Alien"
-      ]
+      ["Astronomy", "Moons"],
+      ["Moons", "The Moon"],
+      ["Moons", "Io"],
+      ["Moons", "Europa"],
+      ["Moons", "Ganymede"],
+      ["Moons", "Callisto"],
+      ["Callisto", "Jupiter"],
+      ["Ganymede", "Jupiter"],
+      ["Io", "Jupiter"],
+      ["Europa", "Jupiter"],
+      ["Jupiter", "Solar System"],
+      ["Solar System", "Astronomy"],
+      ["Solar System", "Earth"],
+      ["Solar System", "Venus"],
+      ["Solar System", "Mercury"],
+      ["Solar System", "Mars"],
+      ["Solar System", "Saturn"],
+      ["Solar System", "Neptune"],
+      ["Solar System", "Uranus"],
+      ["Astronomy", "Telescopes"],
+      ["Telescopes", "Hubble"],
+      ["Telescopes", "James Webb"],
+      ["Astronomy", "Space Shuttles"],
+      ["Space Shuttles", "Atlas"],
+      ["Space Shuttles", "Challenger"],
+      ["Space Shuttles", "Discovery"],
+      ["Space Shuttles", "Endeavor"],
+      ["Astronomy", "Constellations"],
+      ["Constellations", "Sagittarius"],
+      ["Constellations", "Orion"],
+      ["Constellations", "Lyra"],
+      ["Constellations", "Seven Sisters"],
+      ["Constellations", "Pegasus"],
+      ["Constellations", "Taurus"],
+      ["Astronomy", "Galaxies"],
+      ["Galaxies", "Andromeda"],
+      ["Galaxies", "Sombrero"],
+      ["Galaxies", "Milky Way"],
+      ["Astronomy", "Pine Mountain Observatory"],
+      ["Pine Mountain Observatory", "TESS"],
+      ["Pine Mountain Observatory", "Bend, Oregon"],
+      ["Astronomy", "Movies"],
+      ["Movies", "The Martian"],
+      ["Movies", "Apollo 13"],
+      ["Movies", "Aliens"],
+      ["Movies", "Men in Black"],
+      ["Movies", "Wall E"],
+      ["Movies", "Alien"]
     ]
   }
 ]

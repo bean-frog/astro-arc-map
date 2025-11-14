@@ -50,144 +50,187 @@
             View Stats
           </button>
           <dialog id="statsModal" class="modal">
-  <div
-    class="max-w-5xl text-white rounded-md border shadow-xl backdrop-blur-sm modal-box bg-gray-800/85"
-  >
-    <h3 class="mb-4 text-xl font-bold text-white">Stats</h3>
-
-    <div role="tablist" class="tabs tabs-bordered">
-      <!-- All Tab -->
-      <input
-        type="radio"
-        checked
-        name="my_tabs_1"
-        role="tab"
-        class="tab"
-        aria-label="All"
-      />
-      <div role="tabpanel" class="p-4 tab-content">
-        <div class="flex flex-col justify-center items-center p-2">
-          <div class="flex flex-row flex-wrap gap-2 justify-center items-center">
-            <div class="rounded-md border shadow stats bg-gray-800/90">
-              <div class="stat">
-                <div class="text-gray-300 stat-title">Contributors</div>
-                <div class="text-white stat-value" id="totalContributors">
-                  null
-                </div>
-              </div>
-            </div>
-            <div class="rounded-md border shadow stats bg-gray-800/90">
-              <div class="stat">
-                <div class="text-gray-300 stat-title">Unique Words</div>
-                <div class="text-white stat-value" id="uniqueWords">null</div>
-              </div>
-            </div>
-            <div class="rounded-md border shadow stats bg-gray-800/90">
-              <div class="stat">
-                <div class="text-gray-300 stat-title">Unique Connections</div>
-                <div class="text-white stat-value" id="uniqueConnections">
-                  null
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex flex-wrap gap-2 justify-center mt-4">
-            <button id="sortWordBtn" class="btn btn-sm btn-outline">
-              Sort A–Z
-            </button>
-            <button id="sortAppearancesBtn" class="btn btn-sm btn-outline">
-              Sort by Appearances
-            </button>
-            <button id="sortConnectionsBtn" class="btn btn-sm btn-outline">
-              Sort by Connections
-            </button>
-          </div>
-
-          <div class="overflow-x-auto mt-4 w-full">
             <div
-              class="overflow-y-auto max-h-60 rounded-md border border-gray-600 bg-gray-900/70"
+              class="max-w-5xl text-white rounded-md border shadow-xl backdrop-blur-sm modal-box bg-gray-800/85"
             >
-              <table class="table w-full table-zebra">
-                <thead class="sticky top-0 z-10 text-gray-100 bg-gray-700">
-                  <tr>
-                    <th>Word</th>
-                    <th># of Appearances</th>
-                    <th># of Connections</th>
-                  </tr>
-                </thead>
-                <tbody id="statsWordsBody">
-                  <!-- Rows generated dynamically -->
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
+              <h3 class="mb-4 text-xl font-bold text-white">Stats</h3>
 
-      <!-- Individual Tab -->
-      <input
-        type="radio"
-        name="my_tabs_1"
-        role="tab"
-        class="tab"
-        aria-label="Individual"
-      />
-      <div role="tabpanel" class="p-4 tab-content">
-        <div class="flex flex-col justify-center items-center p-2">
-          <div class="p-2 m-2">
-            <select
-              name="nameSelector"
-              id="individualNameSelector"
-              class="text-white select select-md select-bordered bg-gray-900/70"
-            ></select>
-          </div>
+              <div role="tablist" class="tabs tabs-bordered">
+                <!-- All Tab -->
+                <input
+                  type="radio"
+                  checked
+                  name="my_tabs_1"
+                  role="tab"
+                  class="tab"
+                  aria-label="All"
+                />
+                <div role="tabpanel" class="p-4 tab-content">
+                  <div class="flex flex-col justify-center items-center p-2">
+                    <div
+                      class="flex flex-row flex-wrap gap-2 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-md border shadow stats bg-gray-800/90"
+                      >
+                        <div class="stat">
+                          <div class="text-gray-300 stat-title">
+                            Contributors
+                          </div>
+                          <div
+                            class="text-white stat-value"
+                            id="totalContributors"
+                          >
+                            null
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="rounded-md border shadow stats bg-gray-800/90"
+                      >
+                        <div class="stat">
+                          <div class="text-gray-300 stat-title">
+                            Unique Words
+                          </div>
+                          <div class="text-white stat-value" id="uniqueWords">
+                            null
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="rounded-md border shadow stats bg-gray-800/90"
+                      >
+                        <div class="stat">
+                          <div class="text-gray-300 stat-title">
+                            Unique Connections
+                          </div>
+                          <div
+                            class="text-white stat-value"
+                            id="uniqueConnections"
+                          >
+                            null
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-          <div class="flex flex-row flex-wrap gap-2 justify-center items-center">
-            <div class="rounded-md border shadow stats bg-gray-800/90">
-              <div class="stat">
-                <div class="text-gray-300 stat-title">Words</div>
-                <div class="text-white stat-value" id="individualWords">
-                  null
+                    <div class="flex flex-wrap gap-2 justify-center mt-4">
+                      <button id="sortWordBtn" class="btn btn-sm btn-outline">
+                        Sort A–Z
+                      </button>
+                      <button
+                        id="sortAppearancesBtn"
+                        class="btn btn-sm btn-outline"
+                      >
+                        Sort by Appearances
+                      </button>
+                      <button
+                        id="sortConnectionsBtn"
+                        class="btn btn-sm btn-outline"
+                      >
+                        Sort by Connections
+                      </button>
+                    </div>
+
+                    <div class="overflow-x-auto mt-4 w-full">
+                      <div
+                        class="overflow-y-auto max-h-60 rounded-md border border-gray-600 bg-gray-900/70"
+                      >
+                        <table class="table w-full table-zebra">
+                          <thead
+                            class="sticky top-0 z-10 text-gray-100 bg-gray-700"
+                          >
+                            <tr>
+                              <th>Word</th>
+                              <th># of Appearances</th>
+                              <th># of Connections</th>
+                            </tr>
+                          </thead>
+                          <tbody id="statsWordsBody">
+                            <!-- Rows generated dynamically -->
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Individual Tab -->
+                <input
+                  type="radio"
+                  name="my_tabs_1"
+                  role="tab"
+                  class="tab"
+                  aria-label="Individual"
+                />
+                <div role="tabpanel" class="p-4 tab-content">
+                  <div class="flex flex-col justify-center items-center p-2">
+                    <div class="p-2 m-2">
+                      <select
+                        name="nameSelector"
+                        id="individualNameSelector"
+                        class="text-white select select-md select-bordered bg-gray-900/70"
+                      ></select>
+                    </div>
+
+                    <div
+                      class="flex flex-row flex-wrap gap-2 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-md border shadow stats bg-gray-800/90"
+                      >
+                        <div class="stat">
+                          <div class="text-gray-300 stat-title">Words</div>
+                          <div
+                            class="text-white stat-value"
+                            id="individualWords"
+                          >
+                            null
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="rounded-md border shadow stats bg-gray-800/90"
+                      >
+                        <div class="stat">
+                          <div class="text-gray-300 stat-title">
+                            Connections
+                          </div>
+                          <div
+                            class="text-white stat-value"
+                            id="individualConnections"
+                          >
+                            null
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="overflow-y-auto mt-4 w-full max-w-md max-h-60 rounded-md border border-gray-600 bg-gray-900/70"
+                    >
+                      <table class="table w-full table-sm table-zebra">
+                        <tbody id="individualConnectionsBody">
+                          <!-- Rows generated dynamically -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
                 </div>
               </div>
+
+              <p class="py-4 text-sm text-center text-gray-300">
+                Press <kbd class="kbd kbd-xs">ESC</kbd> or click outside to
+                close
+              </p>
             </div>
-            <div class="rounded-md border shadow stats bg-gray-800/90">
-              <div class="stat">
-                <div class="text-gray-300 stat-title">Connections</div>
-                <div
-                  class="text-white stat-value"
-                  id="individualConnections"
-                >
-                  null
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="overflow-y-auto mt-4 w-full max-w-md max-h-60 rounded-md border border-gray-600 bg-gray-900/70"
-          >
-            <table class="table w-full table-sm table-zebra">
-              
-              <tbody id="individualConnectionsBody">
-                <!-- Rows generated dynamically -->
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <p class="py-4 text-sm text-center text-gray-300">
-      Press <kbd class="kbd kbd-xs">ESC</kbd> or click outside to close
-    </p>
-  </div>
-  <form method="dialog" class="backdrop-blur-sm modal-backdrop bg-black/50">
-    <button>close</button>
-  </form>
-</dialog>
-
+            <form
+              method="dialog"
+              class="backdrop-blur-sm modal-backdrop bg-black/50"
+            >
+              <button>close</button>
+            </form>
+          </dialog>
         </div>
 
         <a
@@ -203,7 +246,8 @@
           >image: Pinwheel Galaxy (M101) by Mike Kieran</a
         >
       </div>
-      <canvas id="map" class="absolute inset-0 z-0 w-full h-full"></canvas>
+
+      <canvas id="map" class="absolute inset-0 z-0"></canvas>
       <div
         id="tooltip"
         class="absolute px-3 py-2 m-0 max-w-xs text-sm text-white bg-gray-800 rounded-lg shadow-lg opacity-0"
