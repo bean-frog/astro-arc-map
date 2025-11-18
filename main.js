@@ -24,7 +24,10 @@
   const MAX_SCALE = 3; // max zoom in
   const SCALE_FACTOR = 1.1; // zoom step
 
+
   function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
     draw();
   }
   window.addEventListener("resize", resizeCanvas);
@@ -299,7 +302,7 @@
   // Node/Connection maps
   const nodeMap = new Map();
   const connectionMap = new Map();
-
+  console.log(connectionMap);
   window.mapData.forEach((person) => {
     person.nodes.forEach((node) => {
       if (!nodeMap.has(node)) {
@@ -537,11 +540,18 @@
     startPanY = e.clientY - panY;
     canvas.style.cursor = "grabbing";
 
+    //display extra tooltip info
+    document.getElementById('ttNodeConns').style.display = 'block'
+
+
     // Prevent unwanted selection
     e.preventDefault();
   });
 
   window.addEventListener("mouseup", () => {
+    //hide extra tooltip info
+    document.getElementById('ttNodeConns').style.display = 'none'
+
     if (isPanning) {
       isPanning = false;
       canvas.style.cursor = "grab";
@@ -585,7 +595,17 @@
       }
 
       if (isInside && !found) {
-        tooltip.innerHTML = `<strong>${node}</strong><br>${people.join(", ")}`;
+        // Get connections with this node for tooltip
+        const nodeConns = allConns
+          .filter(([a, b]) => a === node || b === node)
+          .map(([a, b]) => (a === node ? b : a));
+        let nodeConnsHTML = ``;
+        nodeConnsHTML += "<p>";
+        nodeConns.forEach((conn) => {
+          nodeConnsHTML += `${conn}, `;
+        });
+        nodeConnsHTML += "</p>";
+        tooltip.innerHTML = `<strong>${node}</strong><br>${people.join(", ")}<br><span id='ttNodeConns' style='display:none'><hr><strong>Connected To:</strong><p>${nodeConnsHTML}</p></span>`;
         tooltip.style.left = e.clientX + tooltipOffset + "px";
         tooltip.style.top = e.clientY + tooltipOffset + "px";
         tooltip.style.opacity = "1";
@@ -607,7 +627,7 @@
             toPos.x,
             toPos.y,
           );
-          if (dist < 10 && !found) {
+          if (dist < 2 && !found) {
             tooltip.innerHTML = `<strong>${from} ↔ ${to}</strong><br>${people.join(", ")}`;
             tooltip.style.left = e.clientX + tooltipOffset + "px";
             tooltip.style.top = e.clientY + tooltipOffset + "px";
