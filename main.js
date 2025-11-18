@@ -24,7 +24,6 @@
   const MAX_SCALE = 3; // max zoom in
   const SCALE_FACTOR = 1.1; // zoom step
 
-
   function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -541,8 +540,7 @@
     canvas.style.cursor = "grabbing";
 
     //display extra tooltip info
-    document.getElementById('ttNodeConns').style.display = 'block'
-
+    document.getElementById("ttNodeConns").style.display = "block";
 
     // Prevent unwanted selection
     e.preventDefault();
@@ -550,7 +548,7 @@
 
   window.addEventListener("mouseup", () => {
     //hide extra tooltip info
-    document.getElementById('ttNodeConns').style.display = 'none'
+    document.getElementById("ttNodeConns").style.display = "none";
 
     if (isPanning) {
       isPanning = false;
