@@ -176,10 +176,16 @@
   // Initial population
   populateIndividualStats();
 
-  // Name selector and highlight controls
-
+  // Name selector, highlight controls, node search
   const nameSelector = document.getElementById("nameSelector");
   const showNameCheckbox = document.getElementById("showIndividual");
+  // const searchbar = document.getElementById("nodeSearch");
+
+  // searchbar.addEventListener("input", function() {
+  //   targetNode = searchbar.value;
+  // })
+
+
 
   // Add names to DOM element
   names.forEach((name) => {
@@ -548,8 +554,9 @@
 
   window.addEventListener("mouseup", () => {
     //hide extra tooltip info
+    if(document.getElementById("ttNodeConns")) {
     document.getElementById("ttNodeConns").style.display = "none";
-
+    }
     if (isPanning) {
       isPanning = false;
       canvas.style.cursor = "grab";
@@ -559,6 +566,7 @@
   // Handle panning and tooltips
   window.addEventListener("mousemove", (e) => {
     // Skip tooltips while panning
+    tooltip.style.opacity = "0";
     if (isPanning) {
       panX = e.clientX - startPanX;
       panY = e.clientY - startPanY;
